@@ -1,0 +1,699 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2019-09-19 Thu 19:44 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>&lrm;</title>
+<meta name="generator" content="Org mode" />
+<meta name="author" content="Reima" />
+<style type="text/css">
+ <!--/*--><![CDATA[/*><!--*/
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #ccc;
+    box-shadow: 3px 3px 3px #eee;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: visible;
+    padding-top: 1.2em;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    background-color: white;
+    top: -10px;
+    right: 10px;
+    padding: 3px;
+    border: 1px solid black;
+  }
+  pre.src:hover:before { display: inline;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-hledger:before { content: 'hledger'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'Javascript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .equation-container {
+    display: table;
+    text-align: center;
+    width: 100%;
+  }
+  .equation {
+    vertical-align: middle;
+  }
+  .equation-label {
+    display: table-cell;
+    text-align: right;
+    vertical-align: middle;
+  }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { width: 90%; }
+  /*]]>*/-->
+</style>
+<link rel="additional stylesheet" type="text/css" href="ohjelmointi.css" />
+<script type="text/javascript">
+/*
+@licstart  The following is the entire license notice for the
+JavaScript code in this tag.
+
+Copyright (C) 2012-2019 Free Software Foundation, Inc.
+
+The JavaScript code in this tag is free software: you can
+redistribute it and/or modify it under the terms of the GNU
+General Public License (GNU GPL) as published by the Free Software
+Foundation, either version 3 of the License, or (at your option)
+any later version.  The code is distributed WITHOUT ANY WARRANTY;
+without even the implied warranty of MERCHANTABILITY or FITNESS
+FOR A PARTICULAR PURPOSE.  See the GNU GPL for more details.
+
+As additional permission under GNU GPL version 3 section 7, you
+may distribute non-source (e.g., minimized or compacted) forms of
+that code without the copy of the GNU GPL normally required by
+section 4, provided you include this license notice and a URL
+through which recipients can access the Corresponding Source.
+
+
+@licend  The above is the entire license notice
+for the JavaScript code in this tag.
+*/
+<!--/*--><![CDATA[/*><!--*/
+ function CodeHighlightOn(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(null != target) {
+     elem.cacheClassElem = elem.className;
+     elem.cacheClassTarget = target.className;
+     target.className = "code-highlighted";
+     elem.className   = "code-highlighted";
+   }
+ }
+ function CodeHighlightOff(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(elem.cacheClassElem)
+     elem.className = elem.cacheClassElem;
+   if(elem.cacheClassTarget)
+     target.className = elem.cacheClassTarget;
+ }
+/*]]>*///-->
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
+</head>
+<body>
+<div id="content">
+<div id="outline-container-orgb822c6c" class="outline-2">
+<h2 id="orgb822c6c">Kommentti ja väri</h2>
+<div class="outline-text-2" id="text-orgb822c6c">
+</div>
+<div id="outline-container-org9c53fd7" class="outline-3">
+<h3 id="org9c53fd7">Kommentti ohjelmakoodissa</h3>
+<div class="outline-text-3" id="text-org9c53fd7">
+<p>
+Tietokoneohjelmiin kirjoitetaan usein <i>kommentteja</i>, jotka ovat
+ohjelman ihmislukijalle tarkoitettuja selvennyksiä. Tietokone
+jättää kommentit huomiotta ohjelman suorituksessa.
+</p>
+
+<p>
+Processing-ohjelmointikielessä yksi tapa kirjoittaa kommentteja on
+kahden kauttaviivan <code>//</code> avulla. Tietokone jättää huomiotta kahta
+kauttaviivaa seuraavan tekstin rivin loppuun asti. Alla on
+esimerkki kommenttien käytöstä.
+</p>
+
+<div class="org-src-container">
+<pre class="src src-js" id="org5f252c1"><span style="color: #4f97d7; font-weight: bold;">function</span> <span style="color: #bc6ec5; font-weight: bold;">setup</span><span style="color: #4f97d7;">()</span> <span style="color: #4f97d7;">{</span>
+  createCanvas<span style="color: #bc6ec5;">(</span><span style="color: #a45bad;">500</span>, <span style="color: #a45bad;">500</span><span style="color: #bc6ec5;">)</span>; <span style="color: #2aa1ae; background-color: #292e34;">// </span><span style="color: #2aa1ae; background-color: #292e34;">asetetaan piirtoikkunan koko</span>
+  background<span style="color: #bc6ec5;">(</span><span style="color: #2d9574;">"lightblue"</span><span style="color: #bc6ec5;">)</span>; <span style="color: #2aa1ae; background-color: #292e34;">// </span><span style="color: #2aa1ae; background-color: #292e34;">asetetaan tausta vaalean siniseksi</span>
+
+  <span style="color: #2aa1ae; background-color: #292e34;">// </span><span style="color: #2aa1ae; background-color: #292e34;">piirret&#228;&#228;n ristin muotoinen kuvio kahden suorakulmion avulla</span>
+  <span style="color: #2aa1ae; background-color: #292e34;">// </span><span style="color: #2aa1ae; background-color: #292e34;">keskelle piirtoikkunaa</span>
+  rect <span style="color: #bc6ec5;">(</span><span style="color: #a45bad;">200</span>, <span style="color: #a45bad;">100</span>, <span style="color: #a45bad;">100</span>, <span style="color: #a45bad;">300</span><span style="color: #bc6ec5;">)</span>;
+  rect <span style="color: #bc6ec5;">(</span><span style="color: #a45bad;">100</span>, <span style="color: #a45bad;">200</span>, <span style="color: #a45bad;">300</span>, <span style="color: #a45bad;">100</span><span style="color: #bc6ec5;">)</span>;
+<span style="color: #4f97d7;">}</span>
+</pre>
+</div>
+<p>
+<iframe 
+style="width: 600px; height: 400px; overflow: hidden;"  
+scrolling="no" frameborder="0"n 
+src="https://editor.p5js.org/reima/embed/YfsOILLPv"></iframe>
+</p>
+</div>
+</div>
+
+<div id="outline-container-org57429d0" class="outline-3">
+<h3 id="org57429d0">Väreillä piirtäminen</h3>
+<div class="outline-text-3" id="text-org57429d0">
+<p>
+Värikynillä paperille piirrettäessä valitaan ensin, minkä värisellä
+kynällä piirretään. Samaan tapaan p5.js-ohjelmoissa 
+valitaan ennen piirtämistä, millä värillä piirretään. Samalla
+värillä piirretään kunnes valitaan toinen piirtoväri.
+</p>
+
+<p>
+Käyttämässämme ohjelmointikielessä on yli 16 miljoonaa eri väristä
+&ldquo;piirtokynää&rdquo;. Joitakin värejä on nimetty 
+(<code>"lightblue"</code>, <code>"pink"</code>, jne.), kaikki värit ovat käytössä vain kun niihin 
+ viitataan luvuilla. 
+</p>
+
+<p>
+Tietty väri voidaan valita muutamalla eri tavalla. 
+Ihmisen kannalta näistä helpoiten
+tulkittava tapa on värin valitseminen <i>värisävyn</i> (englanniksi
+<i>hue</i>), <i>värikylläisyyden</i> (englanniksi <i>saturation</i>) ja <i>värin
+kirkkauden</i> (englanniksi <i>brightness</i>) avulla. Englanninkielisistä
+sanoista tulee tämän <i>värimallin</i> nimi HSB. 
+</p>
+
+<p>
+Otetaan nyt jokin väri piirtämistä varten valitsemalla värisävy,
+kirkkaus ja värikylläisyys.
+</p>
+<ol class="org-ol">
+<li><p>
+Värisävy on jokin luku nollan ja sadan väliltä. Seuraava kuva
+esittää, mikä värisävy saadaan milläkin luvulla. Kaikissa tämän
+kuvan väreissä on suurin mahdollinen kirkkaus ja värikylläisyys.
+</p>
+
+
+<div class="figure">
+<p><img src="varisavy.png" alt="varisavy.png" class="color-coding-img" />
+</p>
+</div>
+
+<p>
+Valitaanpa värisävyksi 17, joka antaa keltavihreän värin. Tämä
+on merkattu kuvaan katkoviivalla.
+</p></li>
+
+<li><p>
+Valitaan seuraavaksi värin kirkkaus. Kirkkaus kertoo sen, kuinka
+valoisa väri on. Tässä myös kirkkaus on jokin luku nollan ja
+sadan väliltä. Eri kirkkauksilla saadaan seuraavat värit;
+kaikissa tämän kuvan väreissä on suurin mahdollinen
+värikylläisyys.
+</p>
+
+
+<div class="figure">
+<p><img src="kirkkaus.png" alt="kirkkaus.png" class="color-coding-img" />
+</p>
+</div>
+
+<p>
+Valitaan värisävyn 17 lisäksi kirkkaus 75 (kuvassa
+katkoviivalla).
+</p></li>
+
+<li><p>
+Vielä voidaan valita värikylläisyys joka kertoo sen, kuinka
+räikeä väri on. Alla myös värikylläisyys on jokin luku nollan ja
+sadan väliltä. Eri värikylläisyyksillä saadaan seuraavat värit.
+</p>
+
+
+<div class="figure">
+<p><img src="varikyllaisyys.png" alt="varikyllaisyys.png" class="color-coding-img" />
+</p>
+</div>
+
+<p>
+Valitaan värikylläisyydeksi 60 (kuvassa katkoviivalla). 
+</p></li>
+</ol>
+
+<p>
+Kirkkaus valittiin yllä ennen kylläisyyttä, mutta
+Processing-ohjelmointikielessä värin tiedot annetaan järjestyksessä
+sävy 17, kylläisyys 60 ja kirkkaus 75. ps.js-ohjelmissa
+suorakaiteen täyttäminen edellä valitsemallamme värillä tapahtuu
+seuraavasti. HSB-värimallin valinta tapahtuu funktiolla
+<code>colorMode()</code>, ja suorakaiteen täyttämisessä käytetyn värin
+valitseminen funktiolla <code>fill()</code>.
+</p>
+
+<div class="org-src-container">
+<pre class="src src-js" id="orgee691ad"><span style="color: #4f97d7; font-weight: bold;">function</span> <span style="color: #bc6ec5; font-weight: bold;">setup</span><span style="color: #4f97d7;">()</span> <span style="color: #4f97d7;">{</span>
+    createCanvas<span style="color: #bc6ec5;">(</span><span style="color: #a45bad;">600</span>, <span style="color: #a45bad;">400</span><span style="color: #bc6ec5;">)</span>;
+
+    <span style="color: #2aa1ae; background-color: #292e34;">// </span><span style="color: #2aa1ae; background-color: #292e34;">valitaan HSB-v&#228;rimalli, v&#228;rien ominaisuuksien suurimmiksi arvoiksi</span>
+    <span style="color: #2aa1ae; background-color: #292e34;">// </span><span style="color: #2aa1ae; background-color: #292e34;">asetetaan 100</span>
+    colorMode<span style="color: #bc6ec5;">(</span>HSB, <span style="color: #a45bad;">100</span><span style="color: #bc6ec5;">)</span>; 
+
+    <span style="color: #2aa1ae; background-color: #292e34;">// </span><span style="color: #2aa1ae; background-color: #292e34;">valitaan t&#228;ytt&#246;v&#228;riksi v&#228;ri, jonka s&#228;vy on 17, kyll&#228;isyys 60 ja</span>
+    <span style="color: #2aa1ae; background-color: #292e34;">// </span><span style="color: #2aa1ae; background-color: #292e34;">kirkkaus 75.</span>
+    fill<span style="color: #bc6ec5;">(</span><span style="color: #a45bad;">17</span>, <span style="color: #a45bad;">60</span>, <span style="color: #a45bad;">75</span><span style="color: #bc6ec5;">)</span>;
+
+    <span style="color: #2aa1ae; background-color: #292e34;">// </span><span style="color: #2aa1ae; background-color: #292e34;">piirret&#228;&#228;n suorakulmio</span>
+    rect <span style="color: #bc6ec5;">(</span><span style="color: #a45bad;">50</span>, <span style="color: #a45bad;">50</span>, <span style="color: #a45bad;">300</span>, <span style="color: #a45bad;">300</span><span style="color: #bc6ec5;">)</span>;
+  <span style="color: #4f97d7;">}</span>
+</pre>
+</div>
+<p>
+<iframe 
+style="width: 200px; height: 50px; overflow: hidden;"  
+scrolling="no" frameborder="0"
+src="https://editor.p5js.org/reima/embed/aN7ICbPPx"></iframe>
+</p>
+
+<p>
+Myös muita värejä kuin täyttöväri voidaan asettaa. Viivojen
+piirtoväriä säädetään funktiolla <code>stroke()</code>, ja koko piirtoikkunan
+taustaväriä funktiolla <code>background()</code>. Seuraavassa on esimerkki
+näistä.
+</p>
+
+<div class="org-src-container">
+<pre class="src src-js" id="org9a4a173"><span style="color: #4f97d7; font-weight: bold;">function</span> <span style="color: #bc6ec5; font-weight: bold;">setup</span><span style="color: #4f97d7;">()</span> <span style="color: #4f97d7;">{</span>  
+  createCanvas<span style="color: #bc6ec5;">(</span><span style="color: #a45bad;">600</span>, <span style="color: #a45bad;">400</span><span style="color: #bc6ec5;">)</span>;
+  colorMode<span style="color: #bc6ec5;">(</span>HSB, <span style="color: #a45bad;">100</span><span style="color: #bc6ec5;">)</span>;
+
+  <span style="color: #2aa1ae; background-color: #292e34;">// </span><span style="color: #2aa1ae; background-color: #292e34;">t&#228;ytt&#246;v&#228;ri r&#228;ike&#228; ja kirkas sininen</span>
+  fill<span style="color: #bc6ec5;">(</span><span style="color: #a45bad;">67</span>, <span style="color: #a45bad;">100</span>, <span style="color: #a45bad;">100</span><span style="color: #bc6ec5;">)</span>; 
+
+  <span style="color: #2aa1ae; background-color: #292e34;">// </span><span style="color: #2aa1ae; background-color: #292e34;">tausta samalla s&#228;vyll&#228;, mutta v&#228;hemm&#228;n kyll&#228;isell&#228; ja tummemmalla</span>
+  background<span style="color: #bc6ec5;">(</span><span style="color: #a45bad;">67</span>, <span style="color: #a45bad;">50</span>, <span style="color: #a45bad;">50</span><span style="color: #bc6ec5;">)</span>; 
+
+  <span style="color: #2aa1ae; background-color: #292e34;">// </span><span style="color: #2aa1ae; background-color: #292e34;">viivat kirkkaalla punaisella</span>
+  stroke<span style="color: #bc6ec5;">(</span><span style="color: #a45bad;">0</span>, <span style="color: #a45bad;">100</span>, <span style="color: #a45bad;">100</span><span style="color: #bc6ec5;">)</span>; 
+
+  rect<span style="color: #bc6ec5;">(</span><span style="color: #a45bad;">100</span>, <span style="color: #a45bad;">100</span>, <span style="color: #a45bad;">400</span>, <span style="color: #a45bad;">200</span><span style="color: #bc6ec5;">)</span>;
+<span style="color: #4f97d7;">}</span>
+</pre>
+</div>
+<p>
+<iframe 
+style="width: 200px; height: 50px; overflow: hidden;"  
+scrolling="no" frameborder="0"
+src="https://editor.p5js.org/reima/embed/aN7ICbPPx"></iframe>
+</p>
+
+<p>
+Musta ja valkoinen ovat usein käytettyjä värejä. Niille voidaan
+käyttää väriasetusfunktioiden lyhyempiä versioita, joilla annetaan
+vain yksi luku. Tällöin mustaa vastaa luku 0 ja valkoista luku 100,
+ja välillä olevat luvut antavat harmaan eri sävyjä. Kuvioiden
+ääriviivat voidaan jättää pois funktion <code>noStroke()</code>
+avulla. Viivojen piirtäminen saadaan takaisin funktion <code>stroke()</code>
+avulla. Tässä esimerkki, jossa käytetään näitä ominaisuuksia.
+</p>
+
+<div class="org-src-container">
+<pre class="src src-js" id="orgd346a42"><span style="color: #4f97d7; font-weight: bold;">function</span> <span style="color: #bc6ec5; font-weight: bold;">setup</span><span style="color: #4f97d7;">()</span> <span style="color: #4f97d7;">{</span>
+  createCanvas<span style="color: #bc6ec5;">(</span><span style="color: #a45bad;">600</span>, <span style="color: #a45bad;">400</span><span style="color: #bc6ec5;">)</span>;
+  colorMode<span style="color: #bc6ec5;">(</span>HSB, <span style="color: #a45bad;">100</span><span style="color: #bc6ec5;">)</span>;
+  background<span style="color: #bc6ec5;">(</span><span style="color: #a45bad;">17</span>, <span style="color: #a45bad;">30</span>, <span style="color: #a45bad;">50</span><span style="color: #bc6ec5;">)</span>; <span style="color: #2aa1ae; background-color: #292e34;">// </span><span style="color: #2aa1ae; background-color: #292e34;">tausta</span>
+  noStroke<span style="color: #bc6ec5;">()</span>; <span style="color: #2aa1ae; background-color: #292e34;">// </span><span style="color: #2aa1ae; background-color: #292e34;">kuvioiden &#228;&#228;riviivat pois</span>
+  fill<span style="color: #bc6ec5;">(</span><span style="color: #a45bad;">100</span><span style="color: #bc6ec5;">)</span>; <span style="color: #2aa1ae; background-color: #292e34;">// </span><span style="color: #2aa1ae; background-color: #292e34;">t&#228;ytet&#228;&#228;n valkoisella</span>
+  rect<span style="color: #bc6ec5;">(</span><span style="color: #a45bad;">100</span>, <span style="color: #a45bad;">100</span>, <span style="color: #a45bad;">100</span>, <span style="color: #a45bad;">100</span><span style="color: #bc6ec5;">)</span>; <span style="color: #2aa1ae; background-color: #292e34;">// </span><span style="color: #2aa1ae; background-color: #292e34;">valkoinen suorakaide, ei &#228;&#228;riviivaa</span>
+
+  fill<span style="color: #bc6ec5;">(</span><span style="color: #a45bad;">0</span><span style="color: #bc6ec5;">)</span>; <span style="color: #2aa1ae; background-color: #292e34;">// </span><span style="color: #2aa1ae; background-color: #292e34;">uudeksi t&#228;ytt&#246;v&#228;riksi musta</span>
+  stroke<span style="color: #bc6ec5;">(</span><span style="color: #a45bad;">10</span>, <span style="color: #a45bad;">100</span>, <span style="color: #a45bad;">100</span><span style="color: #bc6ec5;">)</span>; <span style="color: #2aa1ae; background-color: #292e34;">// </span><span style="color: #2aa1ae; background-color: #292e34;">piirret&#228;&#228;n viivat, oransseina</span>
+  triangle<span style="color: #bc6ec5;">(</span><span style="color: #a45bad;">300</span>, <span style="color: #a45bad;">200</span>, <span style="color: #a45bad;">500</span>, <span style="color: #a45bad;">350</span>, <span style="color: #a45bad;">250</span>, <span style="color: #a45bad;">50</span><span style="color: #bc6ec5;">)</span>; <span style="color: #2aa1ae; background-color: #292e34;">// </span><span style="color: #2aa1ae; background-color: #292e34;">musta kolmio, oranssi &#228;&#228;riviiva</span>
+ <span style="color: #4f97d7;">}</span>
+</pre>
+</div>
+<p>
+<iframe 
+style="width: 200px; height: 50px; overflow: hidden;"  
+scrolling="no" frameborder="0"
+src="https://editor.p5js.org/reima/embed/aN7ICbPPx"></iframe>
+</p>
+</div>
+</div>
+
+<div id="outline-container-org84557b5" class="outline-3">
+<h3 id="org84557b5">Esimerkki 1</h3>
+<div class="outline-text-3" id="text-org84557b5">
+<p>
+Alla on esimerkki yksinkertaisesta kuvasta. Kuvien piirtäminen
+ohjelmallisesti näin yksinkertaisin menetelmin vaatii paljon työtä
+ja on aikaavievää. Sen takia tehtävissä piirretään pääosin hyvin
+yksinkertaisia kuvia.
+</p>
+<div class="org-src-container">
+<pre class="src src-js" id="org18ea4bf"><span style="color: #4f97d7; font-weight: bold;">function</span> <span style="color: #bc6ec5; font-weight: bold;">setup</span><span style="color: #4f97d7;">()</span> <span style="color: #4f97d7;">{</span>
+  createCanvas<span style="color: #bc6ec5;">(</span><span style="color: #a45bad;">600</span>, <span style="color: #a45bad;">400</span><span style="color: #bc6ec5;">)</span>;
+  colorMode<span style="color: #bc6ec5;">(</span>HSB, <span style="color: #a45bad;">100</span><span style="color: #bc6ec5;">)</span>;
+
+  noStroke<span style="color: #bc6ec5;">()</span>; <span style="color: #2aa1ae; background-color: #292e34;">// </span><span style="color: #2aa1ae; background-color: #292e34;">ei piirret&#228; &#228;&#228;riviivoja</span>
+
+  background<span style="color: #bc6ec5;">(</span><span style="color: #a45bad;">65</span>, <span style="color: #a45bad;">30</span>, <span style="color: #a45bad;">90</span><span style="color: #bc6ec5;">)</span>; <span style="color: #2aa1ae; background-color: #292e34;">// </span><span style="color: #2aa1ae; background-color: #292e34;">sininen taivas taustana</span>
+
+  <span style="color: #2aa1ae; background-color: #292e34;">// </span><span style="color: #2aa1ae; background-color: #292e34;">nurmikko</span>
+  fill<span style="color: #bc6ec5;">(</span><span style="color: #a45bad;">33</span>, <span style="color: #a45bad;">80</span>, <span style="color: #a45bad;">50</span><span style="color: #bc6ec5;">)</span>; <span style="color: #2aa1ae; background-color: #292e34;">// </span><span style="color: #2aa1ae; background-color: #292e34;">vihre&#228; v&#228;ri</span>
+  rect<span style="color: #bc6ec5;">(</span><span style="color: #a45bad;">0</span>, <span style="color: #a45bad;">250</span>, <span style="color: #a45bad;">600</span>, <span style="color: #a45bad;">150</span><span style="color: #bc6ec5;">)</span>;
+
+  <span style="color: #2aa1ae; background-color: #292e34;">// </span><span style="color: #2aa1ae; background-color: #292e34;">talo</span>
+  fill<span style="color: #bc6ec5;">(</span><span style="color: #a45bad;">5</span>, <span style="color: #a45bad;">50</span>, <span style="color: #a45bad;">90</span><span style="color: #bc6ec5;">)</span>; <span style="color: #2aa1ae; background-color: #292e34;">// </span><span style="color: #2aa1ae; background-color: #292e34;">rakennuksen v&#228;ri</span>
+  rect<span style="color: #bc6ec5;">(</span><span style="color: #a45bad;">100</span>, <span style="color: #a45bad;">150</span>, <span style="color: #a45bad;">100</span>, <span style="color: #a45bad;">150</span><span style="color: #bc6ec5;">)</span>; <span style="color: #2aa1ae; background-color: #292e34;">// </span><span style="color: #2aa1ae; background-color: #292e34;">rakennus</span>
+  <span style="color: #2aa1ae; background-color: #292e34;">// </span><span style="color: #2aa1ae; background-color: #292e34;">ikkunat</span>
+  fill<span style="color: #bc6ec5;">(</span><span style="color: #a45bad;">65</span>, <span style="color: #a45bad;">100</span>, <span style="color: #a45bad;">50</span><span style="color: #bc6ec5;">)</span>; <span style="color: #2aa1ae; background-color: #292e34;">// </span><span style="color: #2aa1ae; background-color: #292e34;">ikkunoiden v&#228;ri</span>
+  rect<span style="color: #bc6ec5;">(</span><span style="color: #a45bad;">120</span>, <span style="color: #a45bad;">170</span>, <span style="color: #a45bad;">20</span>, <span style="color: #a45bad;">20</span><span style="color: #bc6ec5;">)</span>;
+  rect<span style="color: #bc6ec5;">(</span><span style="color: #a45bad;">120</span>, <span style="color: #a45bad;">210</span>, <span style="color: #a45bad;">20</span>, <span style="color: #a45bad;">20</span><span style="color: #bc6ec5;">)</span>;
+  rect<span style="color: #bc6ec5;">(</span><span style="color: #a45bad;">160</span>, <span style="color: #a45bad;">170</span>, <span style="color: #a45bad;">20</span>, <span style="color: #a45bad;">20</span><span style="color: #bc6ec5;">)</span>;
+  rect<span style="color: #bc6ec5;">(</span><span style="color: #a45bad;">160</span>, <span style="color: #a45bad;">210</span>, <span style="color: #a45bad;">20</span>, <span style="color: #a45bad;">20</span><span style="color: #bc6ec5;">)</span>;
+
+  <span style="color: #2aa1ae; background-color: #292e34;">// </span><span style="color: #2aa1ae; background-color: #292e34;">puu</span>
+  fill<span style="color: #bc6ec5;">(</span><span style="color: #a45bad;">3</span>, <span style="color: #a45bad;">92</span>, <span style="color: #a45bad;">24</span><span style="color: #bc6ec5;">)</span>; <span style="color: #2aa1ae; background-color: #292e34;">// </span><span style="color: #2aa1ae; background-color: #292e34;">rungon v&#228;ri</span>
+  rect<span style="color: #bc6ec5;">(</span><span style="color: #a45bad;">400</span>, <span style="color: #a45bad;">240</span>, <span style="color: #a45bad;">10</span>, <span style="color: #a45bad;">10</span><span style="color: #bc6ec5;">)</span>; <span style="color: #2aa1ae; background-color: #292e34;">// </span><span style="color: #2aa1ae; background-color: #292e34;">runko</span>
+  fill<span style="color: #bc6ec5;">(</span><span style="color: #a45bad;">33</span>, <span style="color: #a45bad;">70</span>, <span style="color: #a45bad;">20</span><span style="color: #bc6ec5;">)</span>; <span style="color: #2aa1ae; background-color: #292e34;">// </span><span style="color: #2aa1ae; background-color: #292e34;">havujen v&#228;ri</span>
+  triangle<span style="color: #bc6ec5;">(</span><span style="color: #a45bad;">380</span>, <span style="color: #a45bad;">240</span>, <span style="color: #a45bad;">430</span>, <span style="color: #a45bad;">240</span>, <span style="color: #a45bad;">405</span>, <span style="color: #a45bad;">220</span><span style="color: #bc6ec5;">)</span>; <span style="color: #2aa1ae; background-color: #292e34;">// </span><span style="color: #2aa1ae; background-color: #292e34;">alaoksat</span>
+  triangle<span style="color: #bc6ec5;">(</span><span style="color: #a45bad;">385</span>, <span style="color: #a45bad;">230</span>, <span style="color: #a45bad;">425</span>, <span style="color: #a45bad;">230</span>, <span style="color: #a45bad;">405</span>, <span style="color: #a45bad;">210</span><span style="color: #bc6ec5;">)</span>; <span style="color: #2aa1ae; background-color: #292e34;">// </span><span style="color: #2aa1ae; background-color: #292e34;">latva</span>
+ <span style="color: #4f97d7;">}</span>
+</pre>
+</div>
+<p>
+<iframe 
+style="width: 200px; height: 50px; overflow: hidden;"  
+scrolling="no" frameborder="0"
+src="https://editor.p5js.org/reima/embed/aN7ICbPPx"></iframe>
+</p>
+</div>
+</div>
+
+<div id="outline-container-org50097fc" class="outline-3">
+<h3 id="org50097fc">Miten HSB-arvoja löytää?</h3>
+<div class="outline-text-3" id="text-org50097fc">
+<p>
+HSB-arvoja nimitetään myös HSV-arvoiksi. Alla olevalta sivulta saa
+HSV-arvoja nimetyille väreille viemällä hiiren osoittimen värin
+päälle.
+</p>
+
+<p>
+<a href="https://en.wikipedia.org/wiki/List_of_colors_(compact)">https://en.wikipedia.org/wiki/List_of_colors_(compact)</a>
+</p>
+
+<p>
+Sivuilta saaduissa arvoissa on yksi merkittävä ero: niissä
+värisävyn arvo eli \(H\)-arvo on lukujen 0 ja 360 välillä.  Tämän
+arvon voi muuttaa lukujen 0 ja 100 välille lausekkeella \[
+   \frac{H}{360}\cdot 100. \]
+</p>
+
+<p>
+Sivulta löytyvät esimerkiksi värille &ldquo;Turquoise
+green&rdquo; arvot \((142, 25, 84).\) Tällöin lukujen 0 ja 100
+välillä oleva sävyarvo on \[ \frac{142}{360}\cdot 100
+   \approx 39. \] Näillä arvoilla saadaan seuraavanlainen väri.
+</p>
+
+<div class="org-src-container">
+<pre class="src src-js" id="org12f082d"><span style="color: #4f97d7; font-weight: bold;">function</span> <span style="color: #bc6ec5; font-weight: bold;">setup</span><span style="color: #4f97d7;">()</span> <span style="color: #4f97d7;">{</span>
+  createCanvas<span style="color: #bc6ec5;">(</span><span style="color: #a45bad;">100</span>, <span style="color: #a45bad;">100</span><span style="color: #bc6ec5;">)</span>;
+  colorMode<span style="color: #bc6ec5;">(</span>HSB, <span style="color: #a45bad;">100</span><span style="color: #bc6ec5;">)</span>;
+  background<span style="color: #bc6ec5;">(</span><span style="color: #a45bad;">39</span>, <span style="color: #a45bad;">25</span>, <span style="color: #a45bad;">84</span><span style="color: #bc6ec5;">)</span>;
+<span style="color: #4f97d7;">}</span>
+</pre>
+</div>
+<p>
+<iframe 
+style="width: 200px; height: 50px; overflow: hidden;"  
+scrolling="no" frameborder="0"
+src="https://editor.p5js.org/reima/embed/aN7ICbPPx"></iframe>
+</p>
+</div>
+</div>
+
+<div id="outline-container-org90527c5" class="outline-3">
+<h3 id="org90527c5">Tehtävät</h3>
+<div class="outline-text-3" id="text-org90527c5">
+<ol class="org-ol">
+<li>Piirrä keskelle \((600\times 400)\)-kokoista piirtoikkunaa
+\((400\times 200)\)-kokoinen suorakulmio. Taustan värin
+HSB-arvojen tulee olla \((9, 45, 76)\) ja suorakulmion \((54,
+      100, 100)\). Suorakulmiolla ei ole reunusta. Muista asettaa
+<code>colorMode(HSB, 100)</code>.</li>
+<li>Piirrä punainen neliö siniselle pohjalle. Neliöllä tulee olla
+vihreä reunus. Kuvioiden koot ja tarkat värit voit valita itse.</li>
+<li><p>
+Piirrä alla olevan kaltainen kuvio. Taustan HSB-väriarvot ovat
+\((96, 83, 67\)), suorakaiteen \((56, 100, 73)\) ja kolmion
+\((45, 51, 51).\) Suorakaiteella ei ole reunusta, kun taas
+kolmiolla on valkoinen reunus. Kolmion tulee olla osittain
+suorakaiteen päällä. Muuten voit valita kuvioiden mitat
+vapaasti.
+</p>
+<div class="org-src-container">
+<pre class="src src-js" id="org6fe7143"><span style="color: #4f97d7; font-weight: bold;">function</span> <span style="color: #bc6ec5; font-weight: bold;">setup</span><span style="color: #4f97d7;">()</span> <span style="color: #4f97d7;">{</span>
+  createCanvas<span style="color: #bc6ec5;">(</span><span style="color: #a45bad;">300</span>, <span style="color: #a45bad;">200</span><span style="color: #bc6ec5;">)</span>;
+  colorMode<span style="color: #bc6ec5;">(</span>HSB, <span style="color: #a45bad;">100</span><span style="color: #bc6ec5;">)</span>;
+  background<span style="color: #bc6ec5;">(</span><span style="color: #a45bad;">96</span>, <span style="color: #a45bad;">83</span>, <span style="color: #a45bad;">67</span><span style="color: #bc6ec5;">)</span>;
+
+  <span style="color: #2aa1ae; background-color: #292e34;">// </span><span style="color: #2aa1ae; background-color: #292e34;">suorakulmio</span>
+  noStroke<span style="color: #bc6ec5;">()</span>;
+  fill<span style="color: #bc6ec5;">(</span><span style="color: #a45bad;">56</span>, <span style="color: #a45bad;">100</span>, <span style="color: #a45bad;">73</span><span style="color: #bc6ec5;">)</span>;
+  rect<span style="color: #bc6ec5;">(</span><span style="color: #a45bad;">50</span>, <span style="color: #a45bad;">50</span>, <span style="color: #a45bad;">100</span>, <span style="color: #a45bad;">100</span><span style="color: #bc6ec5;">)</span>;
+
+  <span style="color: #2aa1ae; background-color: #292e34;">// </span><span style="color: #2aa1ae; background-color: #292e34;">kolmio</span>
+  stroke<span style="color: #bc6ec5;">(</span><span style="color: #a45bad;">100</span><span style="color: #bc6ec5;">)</span>; <span style="color: #2aa1ae; background-color: #292e34;">// </span><span style="color: #2aa1ae; background-color: #292e34;">valkoinen reunus</span>
+  fill<span style="color: #bc6ec5;">(</span><span style="color: #a45bad;">45</span>, <span style="color: #a45bad;">51</span>, <span style="color: #a45bad;">51</span><span style="color: #bc6ec5;">)</span>;
+  triangle<span style="color: #bc6ec5;">(</span><span style="color: #a45bad;">100</span>, <span style="color: #a45bad;">150</span>, <span style="color: #a45bad;">250</span>, <span style="color: #a45bad;">100</span>, <span style="color: #a45bad;">150</span>, <span style="color: #a45bad;">20</span><span style="color: #bc6ec5;">)</span>;
+<span style="color: #4f97d7;">}</span>
+</pre>
+</div></li>
+</ol>
+<p>
+<iframe 
+style="width: 200px; height: 50px; overflow: hidden;"  
+scrolling="no" frameborder="0"
+src="https://editor.p5js.org/reima/embed/aN7ICbPPx"></iframe>
+</p>
+<ol class="org-ol">
+<li><p>
+Tässä tehtävässä piirtoikkunan taustavärin HSB-arvot ovat \((44,
+      66, 71).\) Millään piirretyllä kuviolla ei ole reunaa. Voit
+valita kuvioiden mitat vapaasti.
+a) Piirrä ikkunan sisälle kaksi suorakaidetta, joilla on sama
+   värisävy ja värikylläisyys kuin taustalla. Toisen
+   suorakaiteen kirkkaus on 25 yksikköä suurempi kuin taustan,
+   toisen 25 yksikköä pienempi kuin taustan.
+</p>
+
+<p>
+b) Piirrä ikkunan sisälle kaksi kolmiota, joilla on sama
+   värisävy ja kirkkaus kuin taustalla. Toisen kolmion
+   värikylläisyys on 30 yksikköä suurempi kuin taustan, toisen
+   30 yksikköä pienempi kuin taustan.
+</p></li>
+<li><p>
+Piirrä alla oleva kuva. Piirtoikkunan koko on \((400\times
+      400).\) Keltaisen värin HSB-arvot ovat \((13, 62, 98).\) 
+</p>
+<div class="org-src-container">
+<pre class="src src-js" id="org90e993c"><span style="color: #4f97d7; font-weight: bold;">function</span> <span style="color: #bc6ec5; font-weight: bold;">setup</span><span style="color: #4f97d7;">()</span> <span style="color: #4f97d7;">{</span>
+  createCanvas<span style="color: #bc6ec5;">(</span><span style="color: #a45bad;">400</span>, <span style="color: #a45bad;">400</span><span style="color: #bc6ec5;">)</span>;
+  colorMode<span style="color: #bc6ec5;">(</span>HSB, <span style="color: #a45bad;">100</span><span style="color: #bc6ec5;">)</span>;
+  noStroke<span style="color: #bc6ec5;">()</span>;
+  background<span style="color: #bc6ec5;">(</span><span style="color: #a45bad;">13</span>, <span style="color: #a45bad;">62</span>, <span style="color: #a45bad;">98</span><span style="color: #bc6ec5;">)</span>; <span style="color: #2aa1ae; background-color: #292e34;">// </span><span style="color: #2aa1ae; background-color: #292e34;">taustav&#228;ri keltainen</span>
+
+  <span style="color: #2aa1ae; background-color: #292e34;">// </span><span style="color: #2aa1ae; background-color: #292e34;">mustat osat</span>
+  fill<span style="color: #bc6ec5;">(</span><span style="color: #a45bad;">0</span><span style="color: #bc6ec5;">)</span>;
+  quad<span style="color: #bc6ec5;">(</span><span style="color: #a45bad;">0</span>, <span style="color: #a45bad;">400</span>, <span style="color: #a45bad;">100</span>, <span style="color: #a45bad;">0</span>, <span style="color: #a45bad;">200</span>, <span style="color: #a45bad;">0</span>, <span style="color: #a45bad;">100</span>, <span style="color: #a45bad;">400</span><span style="color: #bc6ec5;">)</span>;
+  triangle<span style="color: #bc6ec5;">(</span><span style="color: #a45bad;">300</span>, <span style="color: #a45bad;">400</span>, <span style="color: #a45bad;">400</span>, <span style="color: #a45bad;">400</span>, <span style="color: #a45bad;">400</span>, <span style="color: #a45bad;">0</span><span style="color: #bc6ec5;">)</span>;
+
+  <span style="color: #2aa1ae; background-color: #292e34;">// </span><span style="color: #2aa1ae; background-color: #292e34;">valkoinen osa</span>
+  fill<span style="color: #bc6ec5;">(</span><span style="color: #a45bad;">100</span><span style="color: #bc6ec5;">)</span>;
+  quad<span style="color: #bc6ec5;">(</span><span style="color: #a45bad;">200</span>, <span style="color: #a45bad;">0</span>, <span style="color: #a45bad;">100</span>, <span style="color: #a45bad;">400</span>, <span style="color: #a45bad;">200</span>, <span style="color: #a45bad;">400</span>, <span style="color: #a45bad;">300</span>, <span style="color: #a45bad;">0</span><span style="color: #bc6ec5;">)</span>;
+<span style="color: #4f97d7;">}</span>
+</pre>
+</div></li>
+</ol>
+<p>
+<iframe 
+style="width: 200px; height: 50px; overflow: hidden;"  
+scrolling="no" frameborder="0"
+src="https://editor.p5js.org/reima/embed/aN7ICbPPx"></iframe>
+</p>
+<ol class="org-ol">
+<li>Piirrä haluamasi kokoinen Ahvenanmaan lippu. Selvitä tarvittavat
+mitat ja värien tiedot. Voit pyöristää laskuissa saamasi
+tulokset kokonaisluvuiksi Processing-ohjelmaa varten.</li>
+</ol>
+
+<p>
+<iframe 
+style="width: 200px; height: 50px; overflow: hidden;"  
+scrolling="no" frameborder="0"
+src="https://editor.p5js.org/reima/embed/aN7ICbPPx"></iframe>
+</p>
+</div>
+</div>
+</div>
+</div>
+<div id="postamble" class="status">
+<p class="author">Author: Reima</p>
+<p class="date">Created: 2019-09-19 Thu 19:44</p>
+<p class="validation"><a href="http://validator.w3.org/check?uri=referer">Validate</a></p>
+</div>
+</body>
+</html>

@@ -1,0 +1,190 @@
+:root {
+  --base00: #2d2d2d; /* tumman harmaa */
+  --base01: #393939;
+  --base02: #515151;
+  --base03: #747369;
+  --base04: #a09f93; /* harmaa */
+  --base05: #d3d0c8;
+  --base06: #e8e6df;
+  --base07: #f2f0ec;
+  --base08: #f2777a;
+  --base09: #f99157;
+  --base0a: #ffcc66; /* okra */
+  --base0b: #99cc99; /* vaalean vihreä */
+  --base0c: #66cccc;
+  --base0d: #6699cc;
+  --base0e: #cc99cc;
+  --base0f: #d27b53;
+}
+
+body
+{
+    margin: 0;
+    background-color: var(--base07);
+    color: var(--base00);
+    font-family: "Open sans", "Source Sans Pro", "Helvetica Neue", Helvetica, sans-serif;
+    font-size: large;
+    text-align: justify;
+}
+
+ol li ol
+{
+    list-style-type: lower-alpha;
+}
+
+li
+{
+    margin-top: 0.5em;
+}
+
+li li
+{
+    margin-top: 2px;
+}
+
+
+li:first-child
+{
+    margin-top: 0;
+}
+
+canvas
+{
+    display: block;
+    margin: 0 auto;
+    margin-top: 10px;
+}
+
+.color-coding-img
+{
+    width: 50vw;
+}
+
+.org-svg
+{
+    width: 50vw;
+}
+
+@media only screen and (max-width: 800px)
+{
+    canvas
+    {
+        max-width: 70vw;
+    }
+
+}
+
+pre:not(.example)
+{
+    margin: 0 auto;
+    /*font-size: 0.9vw;*/
+    /*width: 65em;*/
+    background-color: var(--base00);
+    color: var(--base07);
+    border-radius: 10px;
+}
+
+blockquote
+{
+    margin-top: 10px;
+    background-color: var(--base0b);
+    margin: 0 auto;
+    margin-top: 10px;
+    width: 80%;
+    border-radius: 3px;
+    padding: 5pt;
+}
+
+pre.example
+{
+    border: 0pt;
+    box-shadow: 0pt 0pt 0pt;
+}
+
+a
+{
+    color: var(--base0d);
+    text-decoration: none;
+}
+
+header
+{
+    background-color: var(--base01);
+    min-height: 100px;
+    width: 100%;
+    position:relative;
+}
+
+h1
+{
+    margin-top: 0;
+}
+
+#content
+{
+    margin-left: 15vw;
+    margin-right: 15vw;
+}
+
+.title
+{
+    color: var(--base07);
+    float: left;
+    margin-left: 1em;
+    margin-top: 1em;
+}
+
+.byline
+{
+    color: var(--base07);
+    float: right;
+    margin-right: 10px;
+    margin-top: 10px;
+}
+
+.author
+{
+    float: right;
+}
+
+.title a:link, .title a:visited, .author a:link, .author a:visited
+{
+    color: white;
+}
+
+.license
+{
+    margin-top: 10px;
+    float: right;
+}
+
+.chapterlink, #supported-by-link
+{
+    color: black;
+    text-decoration: none;
+}
+
+#supported-by
+{
+    position:fixed;
+    right:0;
+    margin-right: 1vw;
+    margin-bottom: 1vw;
+    bottom:0;
+    height: 10vh;
+}
+
+#supported-by-img
+{
+    height: 100%;
+}
+
+#pixel-explanation-img, #while-flowchart-img
+{
+    width: 30vw;
+}
+
+#simple-recursion-tree-img, #square-split-diagonal-img
+{
+    width: 20vw;
+}
