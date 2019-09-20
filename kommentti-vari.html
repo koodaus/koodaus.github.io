@@ -263,13 +263,13 @@ for the JavaScript code in this tag.
 </head>
 <body>
 <div id="content">
-<div id="outline-container-org6dc8882" class="outline-2">
-<h2 id="org6dc8882">Kommentti ja väri</h2>
-<div class="outline-text-2" id="text-org6dc8882">
+<div id="outline-container-org8b3fa24" class="outline-2">
+<h2 id="org8b3fa24">Kommentti ja väri</h2>
+<div class="outline-text-2" id="text-org8b3fa24">
 </div>
-<div id="outline-container-org01ebb4c" class="outline-3">
-<h3 id="org01ebb4c">Kommentti ohjelmakoodissa</h3>
-<div class="outline-text-3" id="text-org01ebb4c">
+<div id="outline-container-org3393c21" class="outline-3">
+<h3 id="org3393c21">Kommentti ohjelmakoodissa</h3>
+<div class="outline-text-3" id="text-org3393c21">
 <p>
 Tietokoneohjelmiin kirjoitetaan usein <i>kommentteja</i>, jotka ovat
 ohjelman ihmislukijalle tarkoitettuja selvennyksiä. Tietokone
@@ -284,14 +284,14 @@ esimerkki kommenttien käytöstä.
 </p>
 
 <div class="org-src-container">
-<pre class="src src-js" id="org037fd5a"><span style="color: #4f97d7; font-weight: bold;">function</span> <span style="color: #bc6ec5; font-weight: bold;">setup</span><span style="color: #4f97d7;">()</span> <span style="color: #4f97d7;">{</span>
+<pre class="src src-js" id="org971294f"><span style="color: #4f97d7; font-weight: bold;">function</span> <span style="color: #bc6ec5; font-weight: bold;">setup</span><span style="color: #4f97d7;">()</span> <span style="color: #4f97d7;">{</span>
   createCanvas<span style="color: #bc6ec5;">(</span><span style="color: #a45bad;">500</span>, <span style="color: #a45bad;">500</span><span style="color: #bc6ec5;">)</span>; <span style="color: #2aa1ae; background-color: #292e34;">// </span><span style="color: #2aa1ae; background-color: #292e34;">asetetaan piirtoikkunan koko</span>
   background<span style="color: #bc6ec5;">(</span><span style="color: #2d9574;">"lightblue"</span><span style="color: #bc6ec5;">)</span>; <span style="color: #2aa1ae; background-color: #292e34;">// </span><span style="color: #2aa1ae; background-color: #292e34;">asetetaan tausta vaalean siniseksi</span>
 
   <span style="color: #2aa1ae; background-color: #292e34;">// </span><span style="color: #2aa1ae; background-color: #292e34;">piirret&#228;&#228;n ristin muotoinen kuvio kahden suorakulmion avulla</span>
   <span style="color: #2aa1ae; background-color: #292e34;">// </span><span style="color: #2aa1ae; background-color: #292e34;">keskelle piirtoikkunaa</span>
-  rect <span style="color: #bc6ec5;">(</span><span style="color: #a45bad;">200</span>, <span style="color: #a45bad;">100</span>, <span style="color: #a45bad;">100</span>, <span style="color: #a45bad;">300</span><span style="color: #bc6ec5;">)</span>;
-  rect <span style="color: #bc6ec5;">(</span><span style="color: #a45bad;">100</span>, <span style="color: #a45bad;">200</span>, <span style="color: #a45bad;">300</span>, <span style="color: #a45bad;">100</span><span style="color: #bc6ec5;">)</span>;
+  rect<span style="color: #bc6ec5;">(</span><span style="color: #a45bad;">200</span>, <span style="color: #a45bad;">100</span>, <span style="color: #a45bad;">100</span>, <span style="color: #a45bad;">300</span><span style="color: #bc6ec5;">)</span>;
+  rect<span style="color: #bc6ec5;">(</span><span style="color: #a45bad;">100</span>, <span style="color: #a45bad;">200</span>, <span style="color: #a45bad;">300</span>, <span style="color: #a45bad;">100</span><span style="color: #bc6ec5;">)</span>;
 <span style="color: #4f97d7;">}</span>
 </pre>
 </div>
@@ -304,9 +304,9 @@ src="https://editor.p5js.org/reima/embed/YfsOILLPv"></iframe>
 </div>
 </div>
 
-<div id="outline-container-org3f67903" class="outline-3">
-<h3 id="org3f67903">Väreillä piirtäminen</h3>
-<div class="outline-text-3" id="text-org3f67903">
+<div id="outline-container-orged311a2" class="outline-3">
+<h3 id="orged311a2">Väreillä piirtäminen</h3>
+<div class="outline-text-3" id="text-orged311a2">
 <p>
 Värikynillä paperille piirrettäessä valitaan ensin, minkä värisellä
 kynällä piirretään. Samaan tapaan p5.js-ohjelmoissa 
@@ -317,8 +317,7 @@ värillä piirretään kunnes valitaan toinen piirtoväri.
 <p>
 Käyttämässämme ohjelmointikielessä on yli 16 miljoonaa eri väristä
 &ldquo;piirtokynää&rdquo;. Joitakin värejä on nimetty 
-(<code>"lightblue"</code>, <code>"pink"</code>, jne.), kaikki värit ovat käytössä vain kun niihin 
- viitataan luvuilla. 
+(<code>"lightblue"</code>, <code>"pink"</code>, jne.), mutta suurinta osaa ei.
 </p>
 
 <p>
@@ -391,15 +390,15 @@ Valitaan värikylläisyydeksi 60 (kuvassa katkoviivalla).
 <p>
 Kirkkaus valittiin yllä ennen kylläisyyttä, mutta
 Processing-ohjelmointikielessä värin tiedot annetaan järjestyksessä
-sävy 17, kylläisyys 60 ja kirkkaus 75. ps.js-ohjelmissa
-suorakaiteen täyttäminen edellä valitsemallamme värillä tapahtuu
+sävy 17, kylläisyys 60 ja kirkkaus 75. p5.js-ohjelmissa
+suorakulmion täyttäminen edellä valitsemallamme värillä tapahtuu
 seuraavasti. HSB-värimallin valinta tapahtuu funktiolla
-<code>colorMode()</code>, ja suorakaiteen täyttämisessä käytetyn värin
+<code>colorMode()</code>, ja suorakulmion täyttämisessä käytetyn värin
 valitseminen funktiolla <code>fill()</code>.
 </p>
 
 <div class="org-src-container">
-<pre class="src src-js" id="orgc39a714"><span style="color: #4f97d7; font-weight: bold;">function</span> <span style="color: #bc6ec5; font-weight: bold;">setup</span><span style="color: #4f97d7;">()</span> <span style="color: #4f97d7;">{</span>
+<pre class="src src-js" id="org1125b96"><span style="color: #4f97d7; font-weight: bold;">function</span> <span style="color: #bc6ec5; font-weight: bold;">setup</span><span style="color: #4f97d7;">()</span> <span style="color: #4f97d7;">{</span>
     createCanvas<span style="color: #bc6ec5;">(</span><span style="color: #a45bad;">600</span>, <span style="color: #a45bad;">400</span><span style="color: #bc6ec5;">)</span>;
 
     <span style="color: #2aa1ae; background-color: #292e34;">// </span><span style="color: #2aa1ae; background-color: #292e34;">valitaan HSB-v&#228;rimalli, v&#228;rien ominaisuuksien suurimmiksi arvoiksi</span>
@@ -417,9 +416,9 @@ valitseminen funktiolla <code>fill()</code>.
 </div>
 <p>
 <iframe 
-style="width: 200px; height: 50px; overflow: hidden;"  
+style="width: 600px; height: 400px; overflow: hidden;"  
 scrolling="no" frameborder="0"
-src="https://editor.p5js.org/reima/embed/aN7ICbPPx"></iframe>
+src="https://editor.p5js.org/reima/embed/DpndzWYWi"></iframe>
 </p>
 
 <p>
@@ -430,7 +429,7 @@ näistä.
 </p>
 
 <div class="org-src-container">
-<pre class="src src-js" id="org429a1c3"><span style="color: #4f97d7; font-weight: bold;">function</span> <span style="color: #bc6ec5; font-weight: bold;">setup</span><span style="color: #4f97d7;">()</span> <span style="color: #4f97d7;">{</span>  
+<pre class="src src-js" id="org9e4ffd0"><span style="color: #4f97d7; font-weight: bold;">function</span> <span style="color: #bc6ec5; font-weight: bold;">setup</span><span style="color: #4f97d7;">()</span> <span style="color: #4f97d7;">{</span>  
   createCanvas<span style="color: #bc6ec5;">(</span><span style="color: #a45bad;">600</span>, <span style="color: #a45bad;">400</span><span style="color: #bc6ec5;">)</span>;
   colorMode<span style="color: #bc6ec5;">(</span>HSB, <span style="color: #a45bad;">100</span><span style="color: #bc6ec5;">)</span>;
 
@@ -447,11 +446,11 @@ näistä.
 <span style="color: #4f97d7;">}</span>
 </pre>
 </div>
-<p>
-<iframe 
-style="width: 200px; height: 50px; overflow: hidden;"  
-scrolling="no" frameborder="0"
-src="https://editor.p5js.org/reima/embed/aN7ICbPPx"></iframe>
+   <p>
+   <iframe 
+   style="width: 600px; height: 400px; overflow: hidden;"  
+   scrolling="no" frameborder="0"
+   src="https://editor.p5js.org/reima/embed/RpXsOFkcH"></iframe>   
 </p>
 
 <p>
@@ -465,7 +464,7 @@ avulla. Tässä esimerkki, jossa käytetään näitä ominaisuuksia.
 </p>
 
 <div class="org-src-container">
-<pre class="src src-js" id="org8dbfffe"><span style="color: #4f97d7; font-weight: bold;">function</span> <span style="color: #bc6ec5; font-weight: bold;">setup</span><span style="color: #4f97d7;">()</span> <span style="color: #4f97d7;">{</span>
+<pre class="src src-js" id="org4ec0796"><span style="color: #4f97d7; font-weight: bold;">function</span> <span style="color: #bc6ec5; font-weight: bold;">setup</span><span style="color: #4f97d7;">()</span> <span style="color: #4f97d7;">{</span>
   createCanvas<span style="color: #bc6ec5;">(</span><span style="color: #a45bad;">600</span>, <span style="color: #a45bad;">400</span><span style="color: #bc6ec5;">)</span>;
   colorMode<span style="color: #bc6ec5;">(</span>HSB, <span style="color: #a45bad;">100</span><span style="color: #bc6ec5;">)</span>;
   background<span style="color: #bc6ec5;">(</span><span style="color: #a45bad;">17</span>, <span style="color: #a45bad;">30</span>, <span style="color: #a45bad;">50</span><span style="color: #bc6ec5;">)</span>; <span style="color: #2aa1ae; background-color: #292e34;">// </span><span style="color: #2aa1ae; background-color: #292e34;">tausta</span>
@@ -481,16 +480,16 @@ avulla. Tässä esimerkki, jossa käytetään näitä ominaisuuksia.
 </div>
 <p>
 <iframe 
-style="width: 200px; height: 50px; overflow: hidden;"  
+style="width: 600px; height: 400px; overflow: hidden;"  
 scrolling="no" frameborder="0"
-src="https://editor.p5js.org/reima/embed/aN7ICbPPx"></iframe>
+src="https://editor.p5js.org/reima/embed/JPH7oC_v8"></iframe>
 </p>
 </div>
 </div>
 
-<div id="outline-container-orge0b6d3c" class="outline-3">
-<h3 id="orge0b6d3c">Esimerkki 1</h3>
-<div class="outline-text-3" id="text-orge0b6d3c">
+<div id="outline-container-org5a1487e" class="outline-3">
+<h3 id="org5a1487e">Esimerkki 1</h3>
+<div class="outline-text-3" id="text-org5a1487e">
 <p>
 Alla on esimerkki yksinkertaisesta kuvasta. Kuvien piirtäminen
 ohjelmallisesti näin yksinkertaisin menetelmin vaatii paljon työtä
@@ -498,7 +497,7 @@ ja on aikaavievää. Sen takia tehtävissä piirretään pääosin hyvin
 yksinkertaisia kuvia.
 </p>
 <div class="org-src-container">
-<pre class="src src-js" id="orge63d97e"><span style="color: #4f97d7; font-weight: bold;">function</span> <span style="color: #bc6ec5; font-weight: bold;">setup</span><span style="color: #4f97d7;">()</span> <span style="color: #4f97d7;">{</span>
+<pre class="src src-js" id="orgce0fc0a"><span style="color: #4f97d7; font-weight: bold;">function</span> <span style="color: #bc6ec5; font-weight: bold;">setup</span><span style="color: #4f97d7;">()</span> <span style="color: #4f97d7;">{</span>
   createCanvas<span style="color: #bc6ec5;">(</span><span style="color: #a45bad;">600</span>, <span style="color: #a45bad;">400</span><span style="color: #bc6ec5;">)</span>;
   colorMode<span style="color: #bc6ec5;">(</span>HSB, <span style="color: #a45bad;">100</span><span style="color: #bc6ec5;">)</span>;
 
@@ -507,11 +506,11 @@ yksinkertaisia kuvia.
   background<span style="color: #bc6ec5;">(</span><span style="color: #a45bad;">65</span>, <span style="color: #a45bad;">30</span>, <span style="color: #a45bad;">90</span><span style="color: #bc6ec5;">)</span>; <span style="color: #2aa1ae; background-color: #292e34;">// </span><span style="color: #2aa1ae; background-color: #292e34;">sininen taivas taustana</span>
 
   <span style="color: #2aa1ae; background-color: #292e34;">// </span><span style="color: #2aa1ae; background-color: #292e34;">nurmikko</span>
-  fill<span style="color: #bc6ec5;">(</span><span style="color: #a45bad;">33</span>, <span style="color: #a45bad;">80</span>, <span style="color: #a45bad;">50</span><span style="color: #bc6ec5;">)</span>; <span style="color: #2aa1ae; background-color: #292e34;">// </span><span style="color: #2aa1ae; background-color: #292e34;">vihre&#228; v&#228;ri</span>
+  fill<span style="color: #bc6ec5;">(</span><span style="color: #a45bad;">33</span>, <span style="color: #a45bad;">40</span>, <span style="color: #a45bad;">50</span><span style="color: #bc6ec5;">)</span>; <span style="color: #2aa1ae; background-color: #292e34;">// </span><span style="color: #2aa1ae; background-color: #292e34;">vihre&#228; v&#228;ri</span>
   rect<span style="color: #bc6ec5;">(</span><span style="color: #a45bad;">0</span>, <span style="color: #a45bad;">250</span>, <span style="color: #a45bad;">600</span>, <span style="color: #a45bad;">150</span><span style="color: #bc6ec5;">)</span>;
 
   <span style="color: #2aa1ae; background-color: #292e34;">// </span><span style="color: #2aa1ae; background-color: #292e34;">talo</span>
-  fill<span style="color: #bc6ec5;">(</span><span style="color: #a45bad;">5</span>, <span style="color: #a45bad;">50</span>, <span style="color: #a45bad;">90</span><span style="color: #bc6ec5;">)</span>; <span style="color: #2aa1ae; background-color: #292e34;">// </span><span style="color: #2aa1ae; background-color: #292e34;">rakennuksen v&#228;ri</span>
+  fill<span style="color: #bc6ec5;">(</span><span style="color: #a45bad;">12</span>, <span style="color: #a45bad;">50</span>, <span style="color: #a45bad;">90</span><span style="color: #bc6ec5;">)</span>; <span style="color: #2aa1ae; background-color: #292e34;">// </span><span style="color: #2aa1ae; background-color: #292e34;">rakennuksen v&#228;ri</span>
   rect<span style="color: #bc6ec5;">(</span><span style="color: #a45bad;">100</span>, <span style="color: #a45bad;">150</span>, <span style="color: #a45bad;">100</span>, <span style="color: #a45bad;">150</span><span style="color: #bc6ec5;">)</span>; <span style="color: #2aa1ae; background-color: #292e34;">// </span><span style="color: #2aa1ae; background-color: #292e34;">rakennus</span>
   <span style="color: #2aa1ae; background-color: #292e34;">// </span><span style="color: #2aa1ae; background-color: #292e34;">ikkunat</span>
   fill<span style="color: #bc6ec5;">(</span><span style="color: #a45bad;">65</span>, <span style="color: #a45bad;">100</span>, <span style="color: #a45bad;">50</span><span style="color: #bc6ec5;">)</span>; <span style="color: #2aa1ae; background-color: #292e34;">// </span><span style="color: #2aa1ae; background-color: #292e34;">ikkunoiden v&#228;ri</span>
@@ -531,16 +530,16 @@ yksinkertaisia kuvia.
 </div>
 <p>
 <iframe 
-style="width: 200px; height: 50px; overflow: hidden;"  
+style="width: 600px; height: 400px; overflow: hidden;"  
 scrolling="no" frameborder="0"
-src="https://editor.p5js.org/reima/embed/aN7ICbPPx"></iframe>
+src="https://editor.p5js.org/reima/embed/kDarBUY7F"></iframe>   
 </p>
 </div>
 </div>
 
-<div id="outline-container-org435f9c8" class="outline-3">
-<h3 id="org435f9c8">Miten HSB-arvoja löytää?</h3>
-<div class="outline-text-3" id="text-org435f9c8">
+<div id="outline-container-orgbe1fd66" class="outline-3">
+<h3 id="orgbe1fd66">Miten HSB-arvoja löytää?</h3>
+<div class="outline-text-3" id="text-orgbe1fd66">
 <p>
 HSB-arvoja nimitetään myös HSV-arvoiksi. Alla olevalta sivulta saa
 HSV-arvoja nimetyille väreille viemällä hiiren osoittimen värin
@@ -566,7 +565,7 @@ välillä oleva sävyarvo on \[ \frac{142}{360}\cdot 100
 </p>
 
 <div class="org-src-container">
-<pre class="src src-js" id="org1212767"><span style="color: #4f97d7; font-weight: bold;">function</span> <span style="color: #bc6ec5; font-weight: bold;">setup</span><span style="color: #4f97d7;">()</span> <span style="color: #4f97d7;">{</span>
+<pre class="src src-js" id="org9851fd5"><span style="color: #4f97d7; font-weight: bold;">function</span> <span style="color: #bc6ec5; font-weight: bold;">setup</span><span style="color: #4f97d7;">()</span> <span style="color: #4f97d7;">{</span>
   createCanvas<span style="color: #bc6ec5;">(</span><span style="color: #a45bad;">100</span>, <span style="color: #a45bad;">100</span><span style="color: #bc6ec5;">)</span>;
   colorMode<span style="color: #bc6ec5;">(</span>HSB, <span style="color: #a45bad;">100</span><span style="color: #bc6ec5;">)</span>;
   background<span style="color: #bc6ec5;">(</span><span style="color: #a45bad;">39</span>, <span style="color: #a45bad;">25</span>, <span style="color: #a45bad;">84</span><span style="color: #bc6ec5;">)</span>;
@@ -575,16 +574,16 @@ välillä oleva sävyarvo on \[ \frac{142}{360}\cdot 100
 </div>
 <p>
 <iframe 
-style="width: 200px; height: 50px; overflow: hidden;"  
+style="width: 100px; height: 100px; overflow: hidden;"  
 scrolling="no" frameborder="0"
-src="https://editor.p5js.org/reima/embed/aN7ICbPPx"></iframe>
+src="https://editor.p5js.org/reima/embed/1BB5rh76I"></iframe>
 </p>
 </div>
 </div>
 
-<div id="outline-container-orgbcc2859" class="outline-3">
-<h3 id="orgbcc2859">Tehtävät</h3>
-<div class="outline-text-3" id="text-orgbcc2859">
+<div id="outline-container-orgda779d4" class="outline-3">
+<h3 id="orgda779d4">Tehtävät</h3>
+<div class="outline-text-3" id="text-orgda779d4">
 <ol class="org-ol">
 <li>Piirrä keskelle \((600\times 400)\)-kokoista piirtoikkunaa
 \((400\times 200)\)-kokoinen suorakulmio. Taustan värin
@@ -601,32 +600,12 @@ kolmiolla on valkoinen reunus. Kolmion tulee olla osittain
 suorakaiteen päällä. Muuten voit valita kuvioiden mitat
 vapaasti.
 </p>
-<div class="org-src-container">
-<pre class="src src-js" id="org0e2d8d2"><span style="color: #4f97d7; font-weight: bold;">function</span> <span style="color: #bc6ec5; font-weight: bold;">setup</span><span style="color: #4f97d7;">()</span> <span style="color: #4f97d7;">{</span>
-  createCanvas<span style="color: #bc6ec5;">(</span><span style="color: #a45bad;">300</span>, <span style="color: #a45bad;">200</span><span style="color: #bc6ec5;">)</span>;
-  colorMode<span style="color: #bc6ec5;">(</span>HSB, <span style="color: #a45bad;">100</span><span style="color: #bc6ec5;">)</span>;
-  background<span style="color: #bc6ec5;">(</span><span style="color: #a45bad;">96</span>, <span style="color: #a45bad;">83</span>, <span style="color: #a45bad;">67</span><span style="color: #bc6ec5;">)</span>;
-
-  <span style="color: #2aa1ae; background-color: #292e34;">// </span><span style="color: #2aa1ae; background-color: #292e34;">suorakulmio</span>
-  noStroke<span style="color: #bc6ec5;">()</span>;
-  fill<span style="color: #bc6ec5;">(</span><span style="color: #a45bad;">56</span>, <span style="color: #a45bad;">100</span>, <span style="color: #a45bad;">73</span><span style="color: #bc6ec5;">)</span>;
-  rect<span style="color: #bc6ec5;">(</span><span style="color: #a45bad;">50</span>, <span style="color: #a45bad;">50</span>, <span style="color: #a45bad;">100</span>, <span style="color: #a45bad;">100</span><span style="color: #bc6ec5;">)</span>;
-
-  <span style="color: #2aa1ae; background-color: #292e34;">// </span><span style="color: #2aa1ae; background-color: #292e34;">kolmio</span>
-  stroke<span style="color: #bc6ec5;">(</span><span style="color: #a45bad;">100</span><span style="color: #bc6ec5;">)</span>; <span style="color: #2aa1ae; background-color: #292e34;">// </span><span style="color: #2aa1ae; background-color: #292e34;">valkoinen reunus</span>
-  fill<span style="color: #bc6ec5;">(</span><span style="color: #a45bad;">45</span>, <span style="color: #a45bad;">51</span>, <span style="color: #a45bad;">51</span><span style="color: #bc6ec5;">)</span>;
-  triangle<span style="color: #bc6ec5;">(</span><span style="color: #a45bad;">100</span>, <span style="color: #a45bad;">150</span>, <span style="color: #a45bad;">250</span>, <span style="color: #a45bad;">100</span>, <span style="color: #a45bad;">150</span>, <span style="color: #a45bad;">20</span><span style="color: #bc6ec5;">)</span>;
-<span style="color: #4f97d7;">}</span>
-</pre>
-</div></li>
-</ol>
 <p>
 <iframe 
-style="width: 200px; height: 50px; overflow: hidden;"  
+style="width: 300px; height: 200px; overflow: hidden;"  
 scrolling="no" frameborder="0"
-src="https://editor.p5js.org/reima/embed/aN7ICbPPx"></iframe>
-</p>
-<ol class="org-ol">
+src="https://editor.p5js.org/reima/embed/6D4kUIYxv"></iframe>
+</p></li>
 <li><p>
 Tässä tehtävässä piirtoikkunan taustavärin HSB-arvot ovat \((44,
       66, 71).\) Millään piirretyllä kuviolla ei ole reunaa. Voit
@@ -647,43 +626,25 @@ b) Piirrä ikkunan sisälle kaksi kolmiota, joilla on sama
 Piirrä alla oleva kuva. Piirtoikkunan koko on \((400\times
       400).\) Keltaisen värin HSB-arvot ovat \((13, 62, 98).\) 
 </p>
-<div class="org-src-container">
-<pre class="src src-js" id="orgc18de78"><span style="color: #4f97d7; font-weight: bold;">function</span> <span style="color: #bc6ec5; font-weight: bold;">setup</span><span style="color: #4f97d7;">()</span> <span style="color: #4f97d7;">{</span>
-  createCanvas<span style="color: #bc6ec5;">(</span><span style="color: #a45bad;">400</span>, <span style="color: #a45bad;">400</span><span style="color: #bc6ec5;">)</span>;
-  colorMode<span style="color: #bc6ec5;">(</span>HSB, <span style="color: #a45bad;">100</span><span style="color: #bc6ec5;">)</span>;
-  noStroke<span style="color: #bc6ec5;">()</span>;
-  background<span style="color: #bc6ec5;">(</span><span style="color: #a45bad;">13</span>, <span style="color: #a45bad;">62</span>, <span style="color: #a45bad;">98</span><span style="color: #bc6ec5;">)</span>; <span style="color: #2aa1ae; background-color: #292e34;">// </span><span style="color: #2aa1ae; background-color: #292e34;">taustav&#228;ri keltainen</span>
-
-  <span style="color: #2aa1ae; background-color: #292e34;">// </span><span style="color: #2aa1ae; background-color: #292e34;">mustat osat</span>
-  fill<span style="color: #bc6ec5;">(</span><span style="color: #a45bad;">0</span><span style="color: #bc6ec5;">)</span>;
-  quad<span style="color: #bc6ec5;">(</span><span style="color: #a45bad;">0</span>, <span style="color: #a45bad;">400</span>, <span style="color: #a45bad;">100</span>, <span style="color: #a45bad;">0</span>, <span style="color: #a45bad;">200</span>, <span style="color: #a45bad;">0</span>, <span style="color: #a45bad;">100</span>, <span style="color: #a45bad;">400</span><span style="color: #bc6ec5;">)</span>;
-  triangle<span style="color: #bc6ec5;">(</span><span style="color: #a45bad;">300</span>, <span style="color: #a45bad;">400</span>, <span style="color: #a45bad;">400</span>, <span style="color: #a45bad;">400</span>, <span style="color: #a45bad;">400</span>, <span style="color: #a45bad;">0</span><span style="color: #bc6ec5;">)</span>;
-
-  <span style="color: #2aa1ae; background-color: #292e34;">// </span><span style="color: #2aa1ae; background-color: #292e34;">valkoinen osa</span>
-  fill<span style="color: #bc6ec5;">(</span><span style="color: #a45bad;">100</span><span style="color: #bc6ec5;">)</span>;
-  quad<span style="color: #bc6ec5;">(</span><span style="color: #a45bad;">200</span>, <span style="color: #a45bad;">0</span>, <span style="color: #a45bad;">100</span>, <span style="color: #a45bad;">400</span>, <span style="color: #a45bad;">200</span>, <span style="color: #a45bad;">400</span>, <span style="color: #a45bad;">300</span>, <span style="color: #a45bad;">0</span><span style="color: #bc6ec5;">)</span>;
-<span style="color: #4f97d7;">}</span>
-</pre>
-</div></li>
-</ol>
 <p>
 <iframe 
-style="width: 200px; height: 50px; overflow: hidden;"  
+style="width: 400px; height: 400px; overflow: hidden;"  
 scrolling="no" frameborder="0"
-src="https://editor.p5js.org/reima/embed/aN7ICbPPx"></iframe>
-</p>
-<ol class="org-ol">
-<li>Piirrä haluamasi kokoinen Ahvenanmaan lippu. Selvitä tarvittavat
+src="https://editor.p5js.org/reima/embed/XcO0aNHf-"></iframe>
+</p></li>
+<li><p>
+Piirrä haluamasi kokoinen Ahvenanmaan lippu. Selvitä tarvittavat
 mitat ja värien tiedot. Voit pyöristää laskuissa saamasi
-tulokset kokonaisluvuiksi Processing-ohjelmaa varten.</li>
-</ol>
+tulokset kokonaisluvuiksi ohjelmaa varten.
+</p>
 
 <p>
 <iframe 
-style="width: 200px; height: 50px; overflow: hidden;"  
+style="width: 520px; height: 340px; overflow: hidden;"  
 scrolling="no" frameborder="0"
-src="https://editor.p5js.org/reima/embed/aN7ICbPPx"></iframe>
-</p>
+src="https://editor.p5js.org/reima/embed/L0Y2FI5E_"></iframe>
+</p></li>
+</ol>
 </div>
 </div>
 </div>
