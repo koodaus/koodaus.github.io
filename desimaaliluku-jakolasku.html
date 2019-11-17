@@ -263,13 +263,13 @@ for the JavaScript code in this tag.
 </head>
 <body>
 <div id="content">
-<div id="outline-container-org8cd02cf" class="outline-2">
-<h2 id="org8cd02cf">Desimaaliluku ja jakolasku</h2>
-<div class="outline-text-2" id="text-org8cd02cf">
+<div id="outline-container-orgfd0042c" class="outline-2">
+<h2 id="orgfd0042c">Desimaaliluku ja jakolasku</h2>
+<div class="outline-text-2" id="text-orgfd0042c">
 </div>
-<div id="outline-container-org70a5385" class="outline-3">
-<h3 id="org70a5385">Desimaalierotin</h3>
-<div class="outline-text-3" id="text-org70a5385">
+<div id="outline-container-org9a88232" class="outline-3">
+<h3 id="org9a88232">Desimaalierotin</h3>
+<div class="outline-text-3" id="text-org9a88232">
 <p>
 JavaScript-ohjelmointikielessä (ja yleensäkin ohjelmointikielissä)
 desimaalierotin on piste. Seuraava esimerkki piirtää kohtaan \((100, 100)\)
@@ -277,12 +277,12 @@ suorakulmion, jonka  korkeus on leveyden ja luvun 0,3 tulo.
 (Toisin sanoen korkeus on 30&thinsp;% leveydestä.)
 </p>
 <div class="org-src-container">
-<pre class="src src-javascript" id="org020ad87">function setup() {
-  createCanvas(400, 400);
-  background("lightblue");
-  const LEVEYS = 150;
-  rect(100, 100, LEVEYS, 0.3 * LEVEYS);
-}
+<pre class="src src-javascript" id="org2f06c31"><span style="color: #4f97d7; font-weight: bold;">function</span> <span style="color: #bc6ec5; font-weight: bold;">setup</span><span style="color: #4f97d7;">()</span> <span style="color: #4f97d7;">{</span>
+  createCanvas<span style="color: #bc6ec5;">(</span><span style="color: #a45bad;">400</span>, <span style="color: #a45bad;">400</span><span style="color: #bc6ec5;">)</span>;
+  background<span style="color: #bc6ec5;">(</span><span style="color: #2d9574;">"lightblue"</span><span style="color: #bc6ec5;">)</span>;
+  <span style="color: #4f97d7; font-weight: bold;">const</span> <span style="color: #7590db;">LEVEYS</span> = <span style="color: #a45bad;">150</span>;
+  rect<span style="color: #bc6ec5;">(</span><span style="color: #a45bad;">100</span>, <span style="color: #a45bad;">100</span>, LEVEYS, <span style="color: #a45bad;">0</span>.<span style="color: #a45bad;">3</span> * LEVEYS<span style="color: #bc6ec5;">)</span>;
+<span style="color: #4f97d7;">}</span>
 </pre>
 </div>
 <p>
@@ -294,9 +294,9 @@ src="https://editor.p5js.org/reima/embed/8g9zCSiHu"></iframe>
 </div>
 </div>
 
-<div id="outline-container-org4aab1c2" class="outline-3">
-<h3 id="org4aab1c2">Jakolasku</h3>
-<div class="outline-text-3" id="text-org4aab1c2">
+<div id="outline-container-orgff980d7" class="outline-3">
+<h3 id="orgff980d7">Jakolasku</h3>
+<div class="outline-text-3" id="text-orgff980d7">
 <p>
 Jakolaskuoperaattori JavaScript-kielessä on kauttaviiva <code>/</code>. Alla
 olevassa esimerkissä piirretään neliö ja sen kanssa kulmittain
@@ -304,13 +304,13 @@ suorakaide, joka leveys on puolet ja korkeus kolmasosa neliön sivun
 pituudesta.
 </p>
 <div class="org-src-container">
-<pre class="src src-javascript" id="org5c290b5">function setup() {
-  createCanvas(400, 400);
-  background("lightblue");
-  const SIVU = 150;
-  rect(0, 0, SIVU, SIVU);
-  rect(SIVU, SIVU, SIVU / 2, SIVU / 3);
-}
+<pre class="src src-javascript" id="org9548e9e"><span style="color: #4f97d7; font-weight: bold;">function</span> <span style="color: #bc6ec5; font-weight: bold;">setup</span><span style="color: #4f97d7;">()</span> <span style="color: #4f97d7;">{</span>
+  createCanvas<span style="color: #bc6ec5;">(</span><span style="color: #a45bad;">400</span>, <span style="color: #a45bad;">400</span><span style="color: #bc6ec5;">)</span>;
+  background<span style="color: #bc6ec5;">(</span><span style="color: #2d9574;">"lightblue"</span><span style="color: #bc6ec5;">)</span>;
+  <span style="color: #4f97d7; font-weight: bold;">const</span> <span style="color: #7590db;">SIVU</span> = <span style="color: #a45bad;">150</span>;
+  rect<span style="color: #bc6ec5;">(</span><span style="color: #a45bad;">0</span>, <span style="color: #a45bad;">0</span>, SIVU, SIVU<span style="color: #bc6ec5;">)</span>;
+  rect<span style="color: #bc6ec5;">(</span>SIVU, SIVU, SIVU / <span style="color: #a45bad;">2</span>, SIVU / <span style="color: #a45bad;">3</span><span style="color: #bc6ec5;">)</span>;
+<span style="color: #4f97d7;">}</span>
 </pre>
 </div>
 <p>
@@ -321,9 +321,9 @@ src="https://editor.p5js.org/reima/embed/WRewRJtO1"></iframe>
 </p>
 </div>
 </div>
-<div id="outline-container-org8b80a16" class="outline-3">
-<h3 id="org8b80a16">Kokonaislukujen jakolasku antaa kokonaisluvun</h3>
-<div class="outline-text-3" id="text-org8b80a16">
+<div id="outline-container-orgae36ac8" class="outline-3">
+<h3 id="orgae36ac8">Kokonaislukujen jakolasku antaa kokonaisluvun</h3>
+<div class="outline-text-3" id="text-orgae36ac8">
 <p>
 Jakolaskuun liittyy suorastaan vaarallinen yksityiskohta.
 </p>
@@ -416,9 +416,9 @@ sanasta integer.
 </div>
 </div>
 
-<div id="outline-container-orge0f3fd8" class="outline-3">
-<h3 id="orge0f3fd8">Sisäiset &ldquo;vakiot&rdquo; <code>width</code> ja <code>height</code> ja skaalautuvat kuvat</h3>
-<div class="outline-text-3" id="text-orge0f3fd8">
+<div id="outline-container-org44ce4c9" class="outline-3">
+<h3 id="org44ce4c9">Sisäiset &ldquo;vakiot&rdquo; <code>width</code> ja <code>height</code> ja skaalautuvat kuvat</h3>
+<div class="outline-text-3" id="text-org44ce4c9">
 <p>
 p5.js-ohjelma määrittelee automaattisesti
 &ldquo;kokonaislukuvakiot&rdquo; <code>width</code> ja <code>height</code>, joiden
@@ -440,13 +440,13 @@ leveys ja korkeus ovat samat, saadaan ympyrä.
 </p>
 
 <div class="org-src-container">
-<pre class="src src-js" id="org8e861f2">function setup() {
-  createCanvas(400, 400);
-  background("lightblue");
-  // ympyrän säde
-  const SADE = width / 2;
-  ellipse(SADE, SADE, width, width);
-}
+<pre class="src src-js" id="org0fbf8e7"><span style="color: #4f97d7; font-weight: bold;">function</span> <span style="color: #bc6ec5; font-weight: bold;">setup</span><span style="color: #4f97d7;">()</span> <span style="color: #4f97d7;">{</span>
+  createCanvas<span style="color: #bc6ec5;">(</span><span style="color: #a45bad;">400</span>, <span style="color: #a45bad;">400</span><span style="color: #bc6ec5;">)</span>;
+  background<span style="color: #bc6ec5;">(</span><span style="color: #2d9574;">"lightblue"</span><span style="color: #bc6ec5;">)</span>;
+  <span style="color: #2aa1ae; background-color: #292e34;">// </span><span style="color: #2aa1ae; background-color: #292e34;">ympyr&#228;n s&#228;de</span>
+  <span style="color: #4f97d7; font-weight: bold;">const</span> <span style="color: #7590db;">SADE</span> = width / <span style="color: #a45bad;">2</span>;
+  ellipse<span style="color: #bc6ec5;">(</span>SADE, SADE, width, width<span style="color: #bc6ec5;">)</span>;
+<span style="color: #4f97d7;">}</span>
 </pre>
 </div>
 <p>
@@ -464,13 +464,13 @@ ikkuna olisi suurempi tai pienempi.
 </p>
 
 <div class="org-src-container">
-<pre class="src src-javascript" id="orgaea0a1b">function setup() {
-  createCanvas(100, 100);
-  background("lightblue");
-  // ympyrän säde
-  const SADE = width / 2;
-  ellipse(SADE, SADE, width, width);
-}
+<pre class="src src-javascript" id="org9e3c3f6"><span style="color: #4f97d7; font-weight: bold;">function</span> <span style="color: #bc6ec5; font-weight: bold;">setup</span><span style="color: #4f97d7;">()</span> <span style="color: #4f97d7;">{</span>
+  createCanvas<span style="color: #bc6ec5;">(</span><span style="color: #a45bad;">100</span>, <span style="color: #a45bad;">100</span><span style="color: #bc6ec5;">)</span>;
+  background<span style="color: #bc6ec5;">(</span><span style="color: #2d9574;">"lightblue"</span><span style="color: #bc6ec5;">)</span>;
+  <span style="color: #2aa1ae; background-color: #292e34;">// </span><span style="color: #2aa1ae; background-color: #292e34;">ympyr&#228;n s&#228;de</span>
+  <span style="color: #4f97d7; font-weight: bold;">const</span> <span style="color: #7590db;">SADE</span> = width / <span style="color: #a45bad;">2</span>;
+  ellipse<span style="color: #bc6ec5;">(</span>SADE, SADE, width, width<span style="color: #bc6ec5;">)</span>;
+<span style="color: #4f97d7;">}</span>
 </pre>
 </div>
 <p>
@@ -481,9 +481,9 @@ src="https://editor.p5js.org/reima/embed/2di28apzL"></iframe>
 </p>
 </div>
 </div>
-<div id="outline-container-org275d090" class="outline-3">
-<h3 id="org275d090">Esimerkki 1</h3>
-<div class="outline-text-3" id="text-org275d090">
+<div id="outline-container-org6be2cf4" class="outline-3">
+<h3 id="org6be2cf4">Esimerkki 1</h3>
+<div class="outline-text-3" id="text-org6be2cf4">
 <p>
 Suomen, Ruotsin ja Tanskan lipuissa on jonkin värinen risti toisen
 värisellä pohjalla. Värien lisäksi lipuissa vaihtelevat
@@ -511,47 +511,47 @@ osan suuruus on tällöin \[ \frac{600}{5 + 2 + 9} = 37,5. \]
 </p>
 
 <div class="org-src-container">
-<pre class="src src-javascript" id="org8740d7d">function setup() {
-   createCanvas(600, 600);
-   // suhteet vaakasuunnassa
-   const VASEN = 5;
-   const KESKI_LEVEYS = 2;
-   const OIKEA = 9;
+<pre class="src src-javascript" id="org9b0407a"><span style="color: #4f97d7; font-weight: bold;">function</span> <span style="color: #bc6ec5; font-weight: bold;">setup</span><span style="color: #4f97d7;">()</span> <span style="color: #4f97d7;">{</span>
+   createCanvas<span style="color: #bc6ec5;">(</span><span style="color: #a45bad;">600</span>, <span style="color: #a45bad;">600</span><span style="color: #bc6ec5;">)</span>;
+   <span style="color: #2aa1ae; background-color: #292e34;">// </span><span style="color: #2aa1ae; background-color: #292e34;">suhteet vaakasuunnassa</span>
+   <span style="color: #4f97d7; font-weight: bold;">const</span> <span style="color: #7590db;">VASEN</span> = <span style="color: #a45bad;">5</span>;
+   <span style="color: #4f97d7; font-weight: bold;">const</span> <span style="color: #7590db;">KESKI_LEVEYS</span> = <span style="color: #a45bad;">2</span>;
+   <span style="color: #4f97d7; font-weight: bold;">const</span> <span style="color: #7590db;">OIKEA</span> = <span style="color: #a45bad;">9</span>;
 
-   // suhteet pystysuunnassa
-   const YLA = 4;
-   const KESKI_PYSTY = 2;
-   const ALA = 4;
+   <span style="color: #2aa1ae; background-color: #292e34;">// </span><span style="color: #2aa1ae; background-color: #292e34;">suhteet pystysuunnassa</span>
+   <span style="color: #4f97d7; font-weight: bold;">const</span> <span style="color: #7590db;">YLA</span> = <span style="color: #a45bad;">4</span>;
+   <span style="color: #4f97d7; font-weight: bold;">const</span> <span style="color: #7590db;">KESKI_PYSTY</span> = <span style="color: #a45bad;">2</span>;
+   <span style="color: #4f97d7; font-weight: bold;">const</span> <span style="color: #7590db;">ALA</span> = <span style="color: #a45bad;">4</span>;
 
-   // taustaväri
-   const TAUSTA_SAVY = 58;
-   const TAUSTA_KYLLAISYYS = 100;
-   const TAUSTA_KIRKKAUS = 26;
+   <span style="color: #2aa1ae; background-color: #292e34;">// </span><span style="color: #2aa1ae; background-color: #292e34;">taustav&#228;ri</span>
+   <span style="color: #4f97d7; font-weight: bold;">const</span> <span style="color: #7590db;">TAUSTA_SAVY</span> = <span style="color: #a45bad;">58</span>;
+   <span style="color: #4f97d7; font-weight: bold;">const</span> <span style="color: #7590db;">TAUSTA_KYLLAISYYS</span> = <span style="color: #a45bad;">100</span>;
+   <span style="color: #4f97d7; font-weight: bold;">const</span> <span style="color: #7590db;">TAUSTA_KIRKKAUS</span> = <span style="color: #a45bad;">26</span>;
 
-   // ristin väri
-   const RISTI_SAVY = 13;
-   const RISTI_KYLLAISYYS = 100;
-   const RISTI_KIRKKAUS = 100;
+   <span style="color: #2aa1ae; background-color: #292e34;">// </span><span style="color: #2aa1ae; background-color: #292e34;">ristin v&#228;ri</span>
+   <span style="color: #4f97d7; font-weight: bold;">const</span> <span style="color: #7590db;">RISTI_SAVY</span> = <span style="color: #a45bad;">13</span>;
+   <span style="color: #4f97d7; font-weight: bold;">const</span> <span style="color: #7590db;">RISTI_KYLLAISYYS</span> = <span style="color: #a45bad;">100</span>;
+   <span style="color: #4f97d7; font-weight: bold;">const</span> <span style="color: #7590db;">RISTI_KIRKKAUS</span> = <span style="color: #a45bad;">100</span>;
 
-   // yhden osan pituus kuvassa: kuvan leveys jaettuna vaakasuunnan
-   // osien summalla
-   const OSA = width / (VASEN + KESKI_LEVEYS + OIKEA);
+   <span style="color: #2aa1ae; background-color: #292e34;">// </span><span style="color: #2aa1ae; background-color: #292e34;">yhden osan pituus kuvassa: kuvan leveys jaettuna vaakasuunnan</span>
+   <span style="color: #2aa1ae; background-color: #292e34;">// </span><span style="color: #2aa1ae; background-color: #292e34;">osien summalla</span>
+   <span style="color: #4f97d7; font-weight: bold;">const</span> <span style="color: #7590db;">OSA</span> = width / <span style="color: #bc6ec5;">(</span>VASEN + KESKI_LEVEYS + OIKEA<span style="color: #bc6ec5;">)</span>;
 
-   // lipun korkeus
-   const KORKEUS = (YLA + KESKI_PYSTY + ALA) * OSA;
+   <span style="color: #2aa1ae; background-color: #292e34;">// </span><span style="color: #2aa1ae; background-color: #292e34;">lipun korkeus</span>
+   <span style="color: #4f97d7; font-weight: bold;">const</span> <span style="color: #7590db;">KORKEUS</span> = <span style="color: #bc6ec5;">(</span>YLA + KESKI_PYSTY + ALA<span style="color: #bc6ec5;">)</span> * OSA;
 
-   colorMode(HSB, 100);
-   noStroke();
+   colorMode<span style="color: #bc6ec5;">(</span>HSB, <span style="color: #a45bad;">100</span><span style="color: #bc6ec5;">)</span>;
+   noStroke<span style="color: #bc6ec5;">()</span>;
 
-   // lipun tausta
-   fill(TAUSTA_SAVY, TAUSTA_KYLLAISYYS, TAUSTA_KIRKKAUS);
-   rect(0, 0, width, KORKEUS);
+   <span style="color: #2aa1ae; background-color: #292e34;">// </span><span style="color: #2aa1ae; background-color: #292e34;">lipun tausta</span>
+   fill<span style="color: #bc6ec5;">(</span>TAUSTA_SAVY, TAUSTA_KYLLAISYYS, TAUSTA_KIRKKAUS<span style="color: #bc6ec5;">)</span>;
+   rect<span style="color: #bc6ec5;">(</span><span style="color: #a45bad;">0</span>, <span style="color: #a45bad;">0</span>, width, KORKEUS<span style="color: #bc6ec5;">)</span>;
 
-   // risti
-   fill(RISTI_SAVY, RISTI_KYLLAISYYS, RISTI_KIRKKAUS);
-   rect(VASEN * OSA, 0, KESKI_LEVEYS * OSA, KORKEUS); // pystypalkki
-   rect(0, YLA * OSA, width, KESKI_PYSTY * OSA); // vaakapalkki
-  }
+   <span style="color: #2aa1ae; background-color: #292e34;">// </span><span style="color: #2aa1ae; background-color: #292e34;">risti</span>
+   fill<span style="color: #bc6ec5;">(</span>RISTI_SAVY, RISTI_KYLLAISYYS, RISTI_KIRKKAUS<span style="color: #bc6ec5;">)</span>;
+   rect<span style="color: #bc6ec5;">(</span>VASEN * OSA, <span style="color: #a45bad;">0</span>, KESKI_LEVEYS * OSA, KORKEUS<span style="color: #bc6ec5;">)</span>; <span style="color: #2aa1ae; background-color: #292e34;">// </span><span style="color: #2aa1ae; background-color: #292e34;">pystypalkki</span>
+   rect<span style="color: #bc6ec5;">(</span><span style="color: #a45bad;">0</span>, YLA * OSA, width, KESKI_PYSTY * OSA<span style="color: #bc6ec5;">)</span>; <span style="color: #2aa1ae; background-color: #292e34;">// </span><span style="color: #2aa1ae; background-color: #292e34;">vaakapalkki</span>
+  <span style="color: #4f97d7;">}</span>
 </pre>
 </div>
 <p>
@@ -568,47 +568,47 @@ lipussa vaakasuunta jakautuu suhteissa \(12 : 4 : 21\) ja
 pystysuunta vastaavissa mitoissa suhteessa \(12 : 4: 12.\)
 </p>
 <div class="org-src-container">
-<pre class="src src-javascript" id="orgbee7ca2">function setup() {
- createCanvas(350, 350);
- // suhteet vaakasuunnassa
- const VASEN = 12;
- const KESKI_LEVEYS = 4;
- const OIKEA = 21;
+<pre class="src src-javascript" id="orgb67f85d"><span style="color: #4f97d7; font-weight: bold;">function</span> <span style="color: #bc6ec5; font-weight: bold;">setup</span><span style="color: #4f97d7;">()</span> <span style="color: #4f97d7;">{</span>
+ createCanvas<span style="color: #bc6ec5;">(</span><span style="color: #a45bad;">350</span>, <span style="color: #a45bad;">350</span><span style="color: #bc6ec5;">)</span>;
+ <span style="color: #2aa1ae; background-color: #292e34;">// </span><span style="color: #2aa1ae; background-color: #292e34;">suhteet vaakasuunnassa</span>
+ <span style="color: #4f97d7; font-weight: bold;">const</span> <span style="color: #7590db;">VASEN</span> = <span style="color: #a45bad;">12</span>;
+ <span style="color: #4f97d7; font-weight: bold;">const</span> <span style="color: #7590db;">KESKI_LEVEYS</span> = <span style="color: #a45bad;">4</span>;
+ <span style="color: #4f97d7; font-weight: bold;">const</span> <span style="color: #7590db;">OIKEA</span> = <span style="color: #a45bad;">21</span>;
 
- // suhteet pystysuunnassa
- const YLA = 12;
- const KESKI_PYSTY = 4;
- const ALA = 12;
+ <span style="color: #2aa1ae; background-color: #292e34;">// </span><span style="color: #2aa1ae; background-color: #292e34;">suhteet pystysuunnassa</span>
+ <span style="color: #4f97d7; font-weight: bold;">const</span> <span style="color: #7590db;">YLA</span> = <span style="color: #a45bad;">12</span>;
+ <span style="color: #4f97d7; font-weight: bold;">const</span> <span style="color: #7590db;">KESKI_PYSTY</span> = <span style="color: #a45bad;">4</span>;
+ <span style="color: #4f97d7; font-weight: bold;">const</span> <span style="color: #7590db;">ALA</span> = <span style="color: #a45bad;">12</span>;
 
- // taustaväri
- const TAUSTA_SAVY = 97;
- const TAUSTA_KYLLAISYYS = 92;
- const TAUSTA_KIRKKAUS = 78;
+ <span style="color: #2aa1ae; background-color: #292e34;">// </span><span style="color: #2aa1ae; background-color: #292e34;">taustav&#228;ri</span>
+ <span style="color: #4f97d7; font-weight: bold;">const</span> <span style="color: #7590db;">TAUSTA_SAVY</span> = <span style="color: #a45bad;">97</span>;
+ <span style="color: #4f97d7; font-weight: bold;">const</span> <span style="color: #7590db;">TAUSTA_KYLLAISYYS</span> = <span style="color: #a45bad;">92</span>;
+ <span style="color: #4f97d7; font-weight: bold;">const</span> <span style="color: #7590db;">TAUSTA_KIRKKAUS</span> = <span style="color: #a45bad;">78</span>;
 
- // ristin väri
- const RISTI_SAVY = 0;
- const RISTI_KYLLAISYYS = 0;
- const RISTI_KIRKKAUS = 100;
+ <span style="color: #2aa1ae; background-color: #292e34;">// </span><span style="color: #2aa1ae; background-color: #292e34;">ristin v&#228;ri</span>
+ <span style="color: #4f97d7; font-weight: bold;">const</span> <span style="color: #7590db;">RISTI_SAVY</span> = <span style="color: #a45bad;">0</span>;
+ <span style="color: #4f97d7; font-weight: bold;">const</span> <span style="color: #7590db;">RISTI_KYLLAISYYS</span> = <span style="color: #a45bad;">0</span>;
+ <span style="color: #4f97d7; font-weight: bold;">const</span> <span style="color: #7590db;">RISTI_KIRKKAUS</span> = <span style="color: #a45bad;">100</span>;
 
- // yhden osan pituus kuvassa: kuvan leveys jaettuna vaakasuunnan
- // osien summalla
- const OSA = width / (VASEN + KESKI_LEVEYS + OIKEA);
+ <span style="color: #2aa1ae; background-color: #292e34;">// </span><span style="color: #2aa1ae; background-color: #292e34;">yhden osan pituus kuvassa: kuvan leveys jaettuna vaakasuunnan</span>
+ <span style="color: #2aa1ae; background-color: #292e34;">// </span><span style="color: #2aa1ae; background-color: #292e34;">osien summalla</span>
+ <span style="color: #4f97d7; font-weight: bold;">const</span> <span style="color: #7590db;">OSA</span> = width / <span style="color: #bc6ec5;">(</span>VASEN + KESKI_LEVEYS + OIKEA<span style="color: #bc6ec5;">)</span>;
 
- // lipun korkeus
- const KORKEUS = (YLA + KESKI_PYSTY + ALA) * OSA;
+ <span style="color: #2aa1ae; background-color: #292e34;">// </span><span style="color: #2aa1ae; background-color: #292e34;">lipun korkeus</span>
+ <span style="color: #4f97d7; font-weight: bold;">const</span> <span style="color: #7590db;">KORKEUS</span> = <span style="color: #bc6ec5;">(</span>YLA + KESKI_PYSTY + ALA<span style="color: #bc6ec5;">)</span> * OSA;
 
- colorMode(HSB, 100);
- noStroke();
+ colorMode<span style="color: #bc6ec5;">(</span>HSB, <span style="color: #a45bad;">100</span><span style="color: #bc6ec5;">)</span>;
+ noStroke<span style="color: #bc6ec5;">()</span>;
 
- // lipun tausta
- fill(TAUSTA_SAVY, TAUSTA_KYLLAISYYS, TAUSTA_KIRKKAUS);
- rect(0, 0, width, KORKEUS);
+ <span style="color: #2aa1ae; background-color: #292e34;">// </span><span style="color: #2aa1ae; background-color: #292e34;">lipun tausta</span>
+ fill<span style="color: #bc6ec5;">(</span>TAUSTA_SAVY, TAUSTA_KYLLAISYYS, TAUSTA_KIRKKAUS<span style="color: #bc6ec5;">)</span>;
+ rect<span style="color: #bc6ec5;">(</span><span style="color: #a45bad;">0</span>, <span style="color: #a45bad;">0</span>, width, KORKEUS<span style="color: #bc6ec5;">)</span>;
 
- // risti
- fill(RISTI_SAVY, RISTI_KYLLAISYYS, RISTI_KIRKKAUS);
- rect(VASEN * OSA, 0, KESKI_LEVEYS * OSA, KORKEUS); // pystypalkki
- rect(0, YLA * OSA, width, KESKI_PYSTY * OSA); // vaakapalkki
-}
+ <span style="color: #2aa1ae; background-color: #292e34;">// </span><span style="color: #2aa1ae; background-color: #292e34;">risti</span>
+ fill<span style="color: #bc6ec5;">(</span>RISTI_SAVY, RISTI_KYLLAISYYS, RISTI_KIRKKAUS<span style="color: #bc6ec5;">)</span>;
+ rect<span style="color: #bc6ec5;">(</span>VASEN * OSA, <span style="color: #a45bad;">0</span>, KESKI_LEVEYS * OSA, KORKEUS<span style="color: #bc6ec5;">)</span>; <span style="color: #2aa1ae; background-color: #292e34;">// </span><span style="color: #2aa1ae; background-color: #292e34;">pystypalkki</span>
+ rect<span style="color: #bc6ec5;">(</span><span style="color: #a45bad;">0</span>, YLA * OSA, width, KESKI_PYSTY * OSA<span style="color: #bc6ec5;">)</span>; <span style="color: #2aa1ae; background-color: #292e34;">// </span><span style="color: #2aa1ae; background-color: #292e34;">vaakapalkki</span>
+<span style="color: #4f97d7;">}</span>
 </pre>
 </div>
 <p>
@@ -619,9 +619,9 @@ src="https://editor.p5js.org/reima/embed/uXv2-5IZH"></iframe>
 </p>
 </div>
 </div>
-<div id="outline-container-org06b687d" class="outline-3">
-<h3 id="org06b687d">Tehtävät</h3>
-<div class="outline-text-3" id="text-org06b687d">
+<div id="outline-container-orgd589806" class="outline-3">
+<h3 id="orgd589806">Tehtävät</h3>
+<div class="outline-text-3" id="text-orgd589806">
 <ol class="org-ol">
 <li>Piirrä neliön muotoiseen piirtoikkunan vasempaan yläkulmaan
 annettu kuvio. Kuvion tulee skaalautua piirtoikkunan mukana.
@@ -635,17 +635,17 @@ skaalautuu piirtoikkunan mukana. Keltaisen värin HSB-arvot ovat
 \((17, 100, 100).\)
 </p>
 <div class="org-src-container">
-<pre class="src src-javascript" id="orgc52e854">function setup() {
-  createCanvas(200, 200);
-  colorMode(HSB, 100);
-  noStroke();
-  background (0);
-  fill(17, 100, 100);
-  const SADE = width / 2.0;
-  ellipse(SADE, SADE, width, width);
-  fill(0);
-  triangle (width, 0, SADE, SADE, width, width);
-}
+<pre class="src src-javascript" id="org8b1816c"><span style="color: #4f97d7; font-weight: bold;">function</span> <span style="color: #bc6ec5; font-weight: bold;">setup</span><span style="color: #4f97d7;">()</span> <span style="color: #4f97d7;">{</span>
+  createCanvas<span style="color: #bc6ec5;">(</span><span style="color: #a45bad;">200</span>, <span style="color: #a45bad;">200</span><span style="color: #bc6ec5;">)</span>;
+  colorMode<span style="color: #bc6ec5;">(</span>HSB, <span style="color: #a45bad;">100</span><span style="color: #bc6ec5;">)</span>;
+  noStroke<span style="color: #bc6ec5;">()</span>;
+  background <span style="color: #bc6ec5;">(</span><span style="color: #a45bad;">0</span><span style="color: #bc6ec5;">)</span>;
+  fill<span style="color: #bc6ec5;">(</span><span style="color: #a45bad;">17</span>, <span style="color: #a45bad;">100</span>, <span style="color: #a45bad;">100</span><span style="color: #bc6ec5;">)</span>;
+  <span style="color: #4f97d7; font-weight: bold;">const</span> <span style="color: #7590db;">SADE</span> = width / <span style="color: #a45bad;">2</span>.<span style="color: #a45bad;">0</span>;
+  ellipse<span style="color: #bc6ec5;">(</span>SADE, SADE, width, width<span style="color: #bc6ec5;">)</span>;
+  fill<span style="color: #bc6ec5;">(</span><span style="color: #a45bad;">0</span><span style="color: #bc6ec5;">)</span>;
+  triangle <span style="color: #bc6ec5;">(</span>width, <span style="color: #a45bad;">0</span>, SADE, SADE, width, width<span style="color: #bc6ec5;">)</span>;
+<span style="color: #4f97d7;">}</span>
 </pre>
 </div>
 <p>
@@ -715,22 +715,22 @@ pystysuunnassa. Alla olevassa kuvassa <code>A:B</code> on <code>1:3</code> ja <c
 <code>3:2</code>.
 </p>
 <div class="org-src-container">
-<pre class="src src-javascript" id="org34942fc">function setup() {
-  createCanvas(500, 200);
-  background("lightblue");
-  const A = 1;
-  const B = 3;
-  const C = 3;
-  const D = 2;
-  noStroke();
+<pre class="src src-javascript" id="org393849e"><span style="color: #4f97d7; font-weight: bold;">function</span> <span style="color: #bc6ec5; font-weight: bold;">setup</span><span style="color: #4f97d7;">()</span> <span style="color: #4f97d7;">{</span>
+  createCanvas<span style="color: #bc6ec5;">(</span><span style="color: #a45bad;">500</span>, <span style="color: #a45bad;">200</span><span style="color: #bc6ec5;">)</span>;
+  background<span style="color: #bc6ec5;">(</span><span style="color: #2d9574;">"lightblue"</span><span style="color: #bc6ec5;">)</span>;
+  <span style="color: #4f97d7; font-weight: bold;">const</span> <span style="color: #7590db;">A</span> = <span style="color: #a45bad;">1</span>;
+  <span style="color: #4f97d7; font-weight: bold;">const</span> <span style="color: #7590db;">B</span> = <span style="color: #a45bad;">3</span>;
+  <span style="color: #4f97d7; font-weight: bold;">const</span> <span style="color: #7590db;">C</span> = <span style="color: #a45bad;">3</span>;
+  <span style="color: #4f97d7; font-weight: bold;">const</span> <span style="color: #7590db;">D</span> = <span style="color: #a45bad;">2</span>;
+  noStroke<span style="color: #bc6ec5;">()</span>;
 
-  // yhteisen kulmapisteen koordinaatit
-  const X = A * width / (A + B);
-  const Y = C * height / (C + D);
+  <span style="color: #2aa1ae; background-color: #292e34;">// </span><span style="color: #2aa1ae; background-color: #292e34;">yhteisen kulmapisteen koordinaatit</span>
+  <span style="color: #4f97d7; font-weight: bold;">const</span> <span style="color: #7590db;">X</span> = A * width / <span style="color: #bc6ec5;">(</span>A + B<span style="color: #bc6ec5;">)</span>;
+  <span style="color: #4f97d7; font-weight: bold;">const</span> <span style="color: #7590db;">Y</span> = C * height / <span style="color: #bc6ec5;">(</span>C + D<span style="color: #bc6ec5;">)</span>;
 
-  rect(0, 0, X, Y);
-  rect(X, Y, width - X, height - Y);
-}
+  rect<span style="color: #bc6ec5;">(</span><span style="color: #a45bad;">0</span>, <span style="color: #a45bad;">0</span>, X, Y<span style="color: #bc6ec5;">)</span>;
+  rect<span style="color: #bc6ec5;">(</span>X, Y, width - X, height - Y<span style="color: #bc6ec5;">)</span>;
+<span style="color: #4f97d7;">}</span>
 </pre>
 </div>
 <p>

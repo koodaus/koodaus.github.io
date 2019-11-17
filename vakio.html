@@ -263,13 +263,13 @@ for the JavaScript code in this tag.
 </head>
 <body>
 <div id="content">
-<div id="outline-container-orgf6d5ec1" class="outline-2">
-<h2 id="orgf6d5ec1">Vakio</h2>
-<div class="outline-text-2" id="text-orgf6d5ec1">
+<div id="outline-container-org00b3a69" class="outline-2">
+<h2 id="org00b3a69">Vakio</h2>
+<div class="outline-text-2" id="text-org00b3a69">
 </div>
-<div id="outline-container-orgb222ba1" class="outline-3">
-<h3 id="orgb222ba1">Vakio</h3>
-<div class="outline-text-3" id="text-orgb222ba1">
+<div id="outline-container-org3aed38b" class="outline-3">
+<h3 id="org3aed38b">Vakio</h3>
+<div class="outline-text-3" id="text-org3aed38b">
 <p>
 Edellisessä kappaleissa kaikki koordinaatit on laskettu käsin ennen
 kuvien piirtämisessä. Yleensä ohjelmoinnissa ei tehdä näin, vaan
@@ -294,18 +294,18 @@ toisiinsa yhdessä kulmapisteessä.
 </p>
 
 <div class="org-src-container">
-<pre class="src src-js">function setup() {
-  createCanvas(600, 400);
-  const SIVU = 128; // vakio
+<pre class="src src-js"><span style="color: #4f97d7; font-weight: bold;">function</span> <span style="color: #bc6ec5; font-weight: bold;">setup</span><span style="color: #4f97d7;">()</span> <span style="color: #4f97d7;">{</span>
+  createCanvas<span style="color: #bc6ec5;">(</span><span style="color: #a45bad;">600</span>, <span style="color: #a45bad;">400</span><span style="color: #bc6ec5;">)</span>;
+  <span style="color: #4f97d7; font-weight: bold;">const</span> <span style="color: #7590db;">SIVU</span> = <span style="color: #a45bad;">128</span>; <span style="color: #2aa1ae; background-color: #292e34;">// </span><span style="color: #2aa1ae; background-color: #292e34;">vakio</span>
 
-  colorMode(HSB, 100);
-  background(59, 21, 87);
-  fill(58, 98, 59);
+  colorMode<span style="color: #bc6ec5;">(</span>HSB, <span style="color: #a45bad;">100</span><span style="color: #bc6ec5;">)</span>;
+  background<span style="color: #bc6ec5;">(</span><span style="color: #a45bad;">59</span>, <span style="color: #a45bad;">21</span>, <span style="color: #a45bad;">87</span><span style="color: #bc6ec5;">)</span>;
+  fill<span style="color: #bc6ec5;">(</span><span style="color: #a45bad;">58</span>, <span style="color: #a45bad;">98</span>, <span style="color: #a45bad;">59</span><span style="color: #bc6ec5;">)</span>;
 
-  rect(0, 0, SIVU, SIVU); // neliö ikkunan vasemmassa yläkulmassa
-  rect(SIVU, SIVU, SIVU, SIVU); // toinen neliö koskettaa ensimmäistä
-  rect(2 * SIVU, 2 * SIVU, SIVU, SIVU); // kolmas koskettaa toista
- }
+  rect<span style="color: #bc6ec5;">(</span><span style="color: #a45bad;">0</span>, <span style="color: #a45bad;">0</span>, SIVU, SIVU<span style="color: #bc6ec5;">)</span>; <span style="color: #2aa1ae; background-color: #292e34;">// </span><span style="color: #2aa1ae; background-color: #292e34;">neli&#246; ikkunan vasemmassa yl&#228;kulmassa</span>
+  rect<span style="color: #bc6ec5;">(</span>SIVU, SIVU, SIVU, SIVU<span style="color: #bc6ec5;">)</span>; <span style="color: #2aa1ae; background-color: #292e34;">// </span><span style="color: #2aa1ae; background-color: #292e34;">toinen neli&#246; koskettaa ensimm&#228;ist&#228;</span>
+  rect<span style="color: #bc6ec5;">(</span><span style="color: #a45bad;">2</span> * SIVU, <span style="color: #a45bad;">2</span> * SIVU, SIVU, SIVU<span style="color: #bc6ec5;">)</span>; <span style="color: #2aa1ae; background-color: #292e34;">// </span><span style="color: #2aa1ae; background-color: #292e34;">kolmas koskettaa toista</span>
+ <span style="color: #4f97d7;">}</span>
 </pre>
 </div>
 <p>
@@ -313,17 +313,17 @@ Verrataan ohjelmaa toiseen, jossa ei käytetä vakioita. Molemmat ohjelmat
 piirtävät saman kuvan.
 </p>
 <div class="org-src-container">
-<pre class="src src-js">function setup() {
-  createCanvas(600, 400);
+<pre class="src src-js"><span style="color: #4f97d7; font-weight: bold;">function</span> <span style="color: #bc6ec5; font-weight: bold;">setup</span><span style="color: #4f97d7;">()</span> <span style="color: #4f97d7;">{</span>
+  createCanvas<span style="color: #bc6ec5;">(</span><span style="color: #a45bad;">600</span>, <span style="color: #a45bad;">400</span><span style="color: #bc6ec5;">)</span>;
 
-  colorMode(HSB, 100);
-  background(59, 21, 87);
-  fill(58, 98, 59);
+  colorMode<span style="color: #bc6ec5;">(</span>HSB, <span style="color: #a45bad;">100</span><span style="color: #bc6ec5;">)</span>;
+  background<span style="color: #bc6ec5;">(</span><span style="color: #a45bad;">59</span>, <span style="color: #a45bad;">21</span>, <span style="color: #a45bad;">87</span><span style="color: #bc6ec5;">)</span>;
+  fill<span style="color: #bc6ec5;">(</span><span style="color: #a45bad;">58</span>, <span style="color: #a45bad;">98</span>, <span style="color: #a45bad;">59</span><span style="color: #bc6ec5;">)</span>;
 
-  rect(0, 0, 128, 128);
-  rect(128, 128, 128, 128);
-  rect(256, 256, 128, 128);
-}
+  rect<span style="color: #bc6ec5;">(</span><span style="color: #a45bad;">0</span>, <span style="color: #a45bad;">0</span>, <span style="color: #a45bad;">128</span>, <span style="color: #a45bad;">128</span><span style="color: #bc6ec5;">)</span>;
+  rect<span style="color: #bc6ec5;">(</span><span style="color: #a45bad;">128</span>, <span style="color: #a45bad;">128</span>, <span style="color: #a45bad;">128</span>, <span style="color: #a45bad;">128</span><span style="color: #bc6ec5;">)</span>;
+  rect<span style="color: #bc6ec5;">(</span><span style="color: #a45bad;">256</span>, <span style="color: #a45bad;">256</span>, <span style="color: #a45bad;">128</span>, <span style="color: #a45bad;">128</span><span style="color: #bc6ec5;">)</span>;
+<span style="color: #4f97d7;">}</span>
 </pre>
 </div>
 
@@ -359,18 +359,18 @@ automaattisesti.
 </p>
 
 <div class="org-src-container">
-<pre class="src src-js">function setup() {
-  createCanvas(600, 400);
-  const SIVU = 87; // sivun pituus muuttuu
+<pre class="src src-js"><span style="color: #4f97d7; font-weight: bold;">function</span> <span style="color: #bc6ec5; font-weight: bold;">setup</span><span style="color: #4f97d7;">()</span> <span style="color: #4f97d7;">{</span>
+  createCanvas<span style="color: #bc6ec5;">(</span><span style="color: #a45bad;">600</span>, <span style="color: #a45bad;">400</span><span style="color: #bc6ec5;">)</span>;
+  <span style="color: #4f97d7; font-weight: bold;">const</span> <span style="color: #7590db;">SIVU</span> = <span style="color: #a45bad;">87</span>; <span style="color: #2aa1ae; background-color: #292e34;">// </span><span style="color: #2aa1ae; background-color: #292e34;">sivun pituus muuttuu</span>
 
-  colorMode(HSB, 100);
-  background(59, 21, 87);
-  fill(58, 98, 59);
+  colorMode<span style="color: #bc6ec5;">(</span>HSB, <span style="color: #a45bad;">100</span><span style="color: #bc6ec5;">)</span>;
+  background<span style="color: #bc6ec5;">(</span><span style="color: #a45bad;">59</span>, <span style="color: #a45bad;">21</span>, <span style="color: #a45bad;">87</span><span style="color: #bc6ec5;">)</span>;
+  fill<span style="color: #bc6ec5;">(</span><span style="color: #a45bad;">58</span>, <span style="color: #a45bad;">98</span>, <span style="color: #a45bad;">59</span><span style="color: #bc6ec5;">)</span>;
 
-  rect(0, 0, SIVU, SIVU); // neliö ikkunan vasemmassa yläkulmassa
-  rect(SIVU, SIVU, SIVU, SIVU); // toinen neliö koskettaa ensimmäistä
-  rect(2 * SIVU, 2 * SIVU, SIVU, SIVU); // kolmas koskettaa toista
-}
+  rect<span style="color: #bc6ec5;">(</span><span style="color: #a45bad;">0</span>, <span style="color: #a45bad;">0</span>, SIVU, SIVU<span style="color: #bc6ec5;">)</span>; <span style="color: #2aa1ae; background-color: #292e34;">// </span><span style="color: #2aa1ae; background-color: #292e34;">neli&#246; ikkunan vasemmassa yl&#228;kulmassa</span>
+  rect<span style="color: #bc6ec5;">(</span>SIVU, SIVU, SIVU, SIVU<span style="color: #bc6ec5;">)</span>; <span style="color: #2aa1ae; background-color: #292e34;">// </span><span style="color: #2aa1ae; background-color: #292e34;">toinen neli&#246; koskettaa ensimm&#228;ist&#228;</span>
+  rect<span style="color: #bc6ec5;">(</span><span style="color: #a45bad;">2</span> * SIVU, <span style="color: #a45bad;">2</span> * SIVU, SIVU, SIVU<span style="color: #bc6ec5;">)</span>; <span style="color: #2aa1ae; background-color: #292e34;">// </span><span style="color: #2aa1ae; background-color: #292e34;">kolmas koskettaa toista</span>
+<span style="color: #4f97d7;">}</span>
 </pre>
 </div>
 
@@ -412,9 +412,9 @@ voi käyttää vakioiden niminä. Tällaisia ovat mm. <code>const</code> sekä
 </blockquote>
 </div>
 </div>
-<div id="outline-container-org8c63427" class="outline-3">
-<h3 id="org8c63427">Laskutoimituksia vakioilla</h3>
-<div class="outline-text-3" id="text-org8c63427">
+<div id="outline-container-org16b4bf9" class="outline-3">
+<h3 id="org16b4bf9">Laskutoimituksia vakioilla</h3>
+<div class="outline-text-3" id="text-org16b4bf9">
 <p>
 p5.js-ohjelmissa kerto-, yhteen- ja vähennyslaskuun
 käytetyt merkit ovat seuraavat.
@@ -462,18 +462,18 @@ yksikön verran. Leveyttä ja väliä voidaan säätää vakioiden avulla.
 </p>
 
 <div class="org-src-container">
-<pre class="src src-js">function setup(){
-    createCanvas(600, 400);
-    const LEVEYS = 80;
-    const VALI = 10;
+<pre class="src src-js"><span style="color: #4f97d7; font-weight: bold;">function</span> <span style="color: #bc6ec5; font-weight: bold;">setup</span><span style="color: #4f97d7;">(){</span>
+    createCanvas<span style="color: #bc6ec5;">(</span><span style="color: #a45bad;">600</span>, <span style="color: #a45bad;">400</span><span style="color: #bc6ec5;">)</span>;
+    <span style="color: #4f97d7; font-weight: bold;">const</span> <span style="color: #7590db;">LEVEYS</span> = <span style="color: #a45bad;">80</span>;
+    <span style="color: #4f97d7; font-weight: bold;">const</span> <span style="color: #7590db;">VALI</span> = <span style="color: #a45bad;">10</span>;
 
-    // vakio korkeus lasketaan leveydestä
-    const KORKEUS = 2 * LEVEYS;
+    <span style="color: #2aa1ae; background-color: #292e34;">// </span><span style="color: #2aa1ae; background-color: #292e34;">vakio korkeus lasketaan leveydest&#228;</span>
+    <span style="color: #4f97d7; font-weight: bold;">const</span> <span style="color: #7590db;">KORKEUS</span> = <span style="color: #a45bad;">2</span> * LEVEYS;
 
-    rect(0, 0, LEVEYS, KORKEUS);
-    rect(LEVEYS + VALI, 0, LEVEYS, KORKEUS);
-    rect(2 * (LEVEYS + VALI), 0, LEVEYS, KORKEUS);
-  }
+    rect<span style="color: #bc6ec5;">(</span><span style="color: #a45bad;">0</span>, <span style="color: #a45bad;">0</span>, LEVEYS, KORKEUS<span style="color: #bc6ec5;">)</span>;
+    rect<span style="color: #bc6ec5;">(</span>LEVEYS + VALI, <span style="color: #a45bad;">0</span>, LEVEYS, KORKEUS<span style="color: #bc6ec5;">)</span>;
+    rect<span style="color: #bc6ec5;">(</span><span style="color: #a45bad;">2</span> * <span style="color: #2d9574;">(</span>LEVEYS + VALI<span style="color: #2d9574;">)</span>, <span style="color: #a45bad;">0</span>, LEVEYS, KORKEUS<span style="color: #bc6ec5;">)</span>;
+  <span style="color: #4f97d7;">}</span>
 </pre>
 </div>
 
@@ -486,9 +486,9 @@ vakion määrittelevällä rivillä.
 </div>
 </div>
 
-<div id="outline-container-org7f1cb94" class="outline-3">
-<h3 id="org7f1cb94">Esimerkki 1</h3>
-<div class="outline-text-3" id="text-org7f1cb94">
+<div id="outline-container-orga914b73" class="outline-3">
+<h3 id="orga914b73">Esimerkki 1</h3>
+<div class="outline-text-3" id="text-orga914b73">
 <p>
 Tässä esimerkissä piirretään mustalle pohjalle valkoinen
 suunnikas. Seuraavat vakiot ja ominaisuudet määrittävät kuvion
@@ -509,31 +509,31 @@ Suunnikkaan vasemman yläkulman sekä oikean alakulman
 </p>
 
 <div class="org-src-container">
-<pre class="src src-js">function setup() {
-  createCanvas(600, 400);
+<pre class="src src-js"><span style="color: #4f97d7; font-weight: bold;">function</span> <span style="color: #bc6ec5; font-weight: bold;">setup</span><span style="color: #4f97d7;">()</span> <span style="color: #4f97d7;">{</span>
+  createCanvas<span style="color: #bc6ec5;">(</span><span style="color: #a45bad;">600</span>, <span style="color: #a45bad;">400</span><span style="color: #bc6ec5;">)</span>;
 
-  // kuvion mitat määrittävät vakiot
-  const KANTA = 250; // suunnikkaan leveys
-  const KORKEUS = 330; // suunnikkaan korkeus
-  // suunnikkaan vasemman yläkulman x-koordinaatti
-  const OIKEA_YLAKULMA_X = 400;
-  // suunnikkaan vasemman alakulman x-koordinaatti
-  const VASEN_ALAKULMA_X = 80;
+  <span style="color: #2aa1ae; background-color: #292e34;">// </span><span style="color: #2aa1ae; background-color: #292e34;">kuvion mitat m&#228;&#228;ritt&#228;v&#228;t vakiot</span>
+  <span style="color: #4f97d7; font-weight: bold;">const</span> <span style="color: #7590db;">KANTA</span> = <span style="color: #a45bad;">250</span>; <span style="color: #2aa1ae; background-color: #292e34;">// </span><span style="color: #2aa1ae; background-color: #292e34;">suunnikkaan leveys</span>
+  <span style="color: #4f97d7; font-weight: bold;">const</span> <span style="color: #7590db;">KORKEUS</span> = <span style="color: #a45bad;">330</span>; <span style="color: #2aa1ae; background-color: #292e34;">// </span><span style="color: #2aa1ae; background-color: #292e34;">suunnikkaan korkeus</span>
+  <span style="color: #2aa1ae; background-color: #292e34;">// </span><span style="color: #2aa1ae; background-color: #292e34;">suunnikkaan vasemman yl&#228;kulman x-koordinaatti</span>
+  <span style="color: #4f97d7; font-weight: bold;">const</span> <span style="color: #7590db;">OIKEA_YLAKULMA_X</span> = <span style="color: #a45bad;">400</span>;
+  <span style="color: #2aa1ae; background-color: #292e34;">// </span><span style="color: #2aa1ae; background-color: #292e34;">suunnikkaan vasemman alakulman x-koordinaatti</span>
+  <span style="color: #4f97d7; font-weight: bold;">const</span> <span style="color: #7590db;">VASEN_ALAKULMA_X</span> = <span style="color: #a45bad;">80</span>;
 
-  // lasketaan vielä tuntemattomat x-koordinaatit ja tallennetaan ne
-  // vakioihin
-  const VASEN_YLAKULMA_X = OIKEA_YLAKULMA_X - KANTA;
-  const OIKEA_ALAKULMA_X = VASEN_ALAKULMA_X + KANTA;
+  <span style="color: #2aa1ae; background-color: #292e34;">// </span><span style="color: #2aa1ae; background-color: #292e34;">lasketaan viel&#228; tuntemattomat x-koordinaatit ja tallennetaan ne</span>
+  <span style="color: #2aa1ae; background-color: #292e34;">// </span><span style="color: #2aa1ae; background-color: #292e34;">vakioihin</span>
+  <span style="color: #4f97d7; font-weight: bold;">const</span> <span style="color: #7590db;">VASEN_YLAKULMA_X</span> = OIKEA_YLAKULMA_X - KANTA;
+  <span style="color: #4f97d7; font-weight: bold;">const</span> <span style="color: #7590db;">OIKEA_ALAKULMA_X</span> = VASEN_ALAKULMA_X + KANTA;
 
-  colorMode(HSB, 100);
-  noStroke ();
-  background(0);
+  colorMode<span style="color: #bc6ec5;">(</span>HSB, <span style="color: #a45bad;">100</span><span style="color: #bc6ec5;">)</span>;
+  noStroke <span style="color: #bc6ec5;">()</span>;
+  background<span style="color: #bc6ec5;">(</span><span style="color: #a45bad;">0</span><span style="color: #bc6ec5;">)</span>;
 
-  quad (VASEN_YLAKULMA_X, 0,
-        OIKEA_YLAKULMA_X, 0,
+  quad <span style="color: #bc6ec5;">(</span>VASEN_YLAKULMA_X, <span style="color: #a45bad;">0</span>,
+        OIKEA_YLAKULMA_X, <span style="color: #a45bad;">0</span>,
         OIKEA_ALAKULMA_X, KORKEUS,
-        VASEN_ALAKULMA_X, KORKEUS);
- }
+        VASEN_ALAKULMA_X, KORKEUS<span style="color: #bc6ec5;">)</span>;
+ <span style="color: #4f97d7;">}</span>
 </pre>
 </div>
 <p>
@@ -548,31 +548,31 @@ ohjelmakoodilla piirtää seuraavanlainen kuvio.
 </p>
 
 <div class="org-src-container">
-<pre class="src src-js">function setup() {
-  createCanvas(600, 400);
+<pre class="src src-js"><span style="color: #4f97d7; font-weight: bold;">function</span> <span style="color: #bc6ec5; font-weight: bold;">setup</span><span style="color: #4f97d7;">()</span> <span style="color: #4f97d7;">{</span>
+  createCanvas<span style="color: #bc6ec5;">(</span><span style="color: #a45bad;">600</span>, <span style="color: #a45bad;">400</span><span style="color: #bc6ec5;">)</span>;
 
-  // kuvion mitat määrittävät vakiot
-  const KANTA = 350; // suunnikkaan leveys
-  const KORKEUS = 50; // suunnikkaan korkeus
-  // suunnikkaan vasemman yläkulman x-koordinaatti
-  const OIKEA_YLAKULMA_X = 400;
-  // suunnikkaan vasemman alakulman x-koordinaatti
-  const VASEN_ALAKULMA_X = 80;
+  <span style="color: #2aa1ae; background-color: #292e34;">// </span><span style="color: #2aa1ae; background-color: #292e34;">kuvion mitat m&#228;&#228;ritt&#228;v&#228;t vakiot</span>
+  <span style="color: #4f97d7; font-weight: bold;">const</span> <span style="color: #7590db;">KANTA</span> = <span style="color: #a45bad;">350</span>; <span style="color: #2aa1ae; background-color: #292e34;">// </span><span style="color: #2aa1ae; background-color: #292e34;">suunnikkaan leveys</span>
+  <span style="color: #4f97d7; font-weight: bold;">const</span> <span style="color: #7590db;">KORKEUS</span> = <span style="color: #a45bad;">50</span>; <span style="color: #2aa1ae; background-color: #292e34;">// </span><span style="color: #2aa1ae; background-color: #292e34;">suunnikkaan korkeus</span>
+  <span style="color: #2aa1ae; background-color: #292e34;">// </span><span style="color: #2aa1ae; background-color: #292e34;">suunnikkaan vasemman yl&#228;kulman x-koordinaatti</span>
+  <span style="color: #4f97d7; font-weight: bold;">const</span> <span style="color: #7590db;">OIKEA_YLAKULMA_X</span> = <span style="color: #a45bad;">400</span>;
+  <span style="color: #2aa1ae; background-color: #292e34;">// </span><span style="color: #2aa1ae; background-color: #292e34;">suunnikkaan vasemman alakulman x-koordinaatti</span>
+  <span style="color: #4f97d7; font-weight: bold;">const</span> <span style="color: #7590db;">VASEN_ALAKULMA_X</span> = <span style="color: #a45bad;">80</span>;
 
-  // lasketaan vielä tuntemattomat x-koordinaatit ja tallennetaan ne
-  // vakioihin
-  const VASEN_YLAKULMA_X = OIKEA_YLAKULMA_X - KANTA;
-  const OIKEA_ALAKULMA_X = VASEN_ALAKULMA_X + KANTA;
+  <span style="color: #2aa1ae; background-color: #292e34;">// </span><span style="color: #2aa1ae; background-color: #292e34;">lasketaan viel&#228; tuntemattomat x-koordinaatit ja tallennetaan ne</span>
+  <span style="color: #2aa1ae; background-color: #292e34;">// </span><span style="color: #2aa1ae; background-color: #292e34;">vakioihin</span>
+  <span style="color: #4f97d7; font-weight: bold;">const</span> <span style="color: #7590db;">VASEN_YLAKULMA_X</span> = OIKEA_YLAKULMA_X - KANTA;
+  <span style="color: #4f97d7; font-weight: bold;">const</span> <span style="color: #7590db;">OIKEA_ALAKULMA_X</span> = VASEN_ALAKULMA_X + KANTA;
 
-  colorMode(HSB, 100);
-  noStroke ();
-  background(0);
+  colorMode<span style="color: #bc6ec5;">(</span>HSB, <span style="color: #a45bad;">100</span><span style="color: #bc6ec5;">)</span>;
+  noStroke <span style="color: #bc6ec5;">()</span>;
+  background<span style="color: #bc6ec5;">(</span><span style="color: #a45bad;">0</span><span style="color: #bc6ec5;">)</span>;
 
-  quad (VASEN_YLAKULMA_X, 0,
-        OIKEA_YLAKULMA_X, 0,
+  quad <span style="color: #bc6ec5;">(</span>VASEN_YLAKULMA_X, <span style="color: #a45bad;">0</span>,
+        OIKEA_YLAKULMA_X, <span style="color: #a45bad;">0</span>,
         OIKEA_ALAKULMA_X, KORKEUS,
-        VASEN_ALAKULMA_X, KORKEUS);
-}
+        VASEN_ALAKULMA_X, KORKEUS<span style="color: #bc6ec5;">)</span>;
+<span style="color: #4f97d7;">}</span>
 </pre>
 </div>
 <p>
@@ -583,9 +583,9 @@ src="https://editor.p5js.org/reima/embed/EqnFF0hZV"></iframe>
 </p>
 </div>
 </div>
-<div id="outline-container-org2b5f0b2" class="outline-3">
-<h3 id="org2b5f0b2">Tehtävät</h3>
-<div class="outline-text-3" id="text-org2b5f0b2">
+<div id="outline-container-org22dfe3c" class="outline-3">
+<h3 id="org22dfe3c">Tehtävät</h3>
+<div class="outline-text-3" id="text-org22dfe3c">
 <ol class="org-ol">
 <li>Piirrä \((400\times 400)\)-kokoiseen piirtoikkunaan neliö, jonka
 vasen yläkulma on koordinaateissa \((0, 0).\) Määrittele neliön

@@ -263,13 +263,13 @@ for the JavaScript code in this tag.
 </head>
 <body>
 <div id="content">
-<div id="outline-container-orgea2f2a7" class="outline-2">
-<h2 id="orgea2f2a7">Ehdollinen suorittaminen</h2>
-<div class="outline-text-2" id="text-orgea2f2a7">
+<div id="outline-container-org176aad6" class="outline-2">
+<h2 id="org176aad6">Ehdollinen suorittaminen</h2>
+<div class="outline-text-2" id="text-org176aad6">
 </div>
-<div id="outline-container-org20e6c4a" class="outline-3">
-<h3 id="org20e6c4a">Esimerkki 1</h3>
-<div class="outline-text-3" id="text-org20e6c4a">
+<div id="outline-container-org7d835bf" class="outline-3">
+<h3 id="org7d835bf">Esimerkki 1</h3>
+<div class="outline-text-3" id="text-org7d835bf">
 <p>
 Haluamme kirjoittaa ohjelman, joka toimii seuraavasti.
 </p>
@@ -301,22 +301,22 @@ suorittamisessa käytetään Processing-kielen varattuja sanoja <code>if</code>
 </p>
 
 <div class="org-src-container">
-<pre class="src src-js">function setup() {
-  createCanvas(300, 100);
-  background("lightblue");
-  // jos leveys on suurempi kuin korkeus
-  if (width &gt; height)
-    triangle(0, 0, width, height / 2, 0, height); // kolmio oikealle
-  else // muussa tapauksessa
-    triangle(0, 0, width, 0, width / 2, height); // kolmio alas
-}
+<pre class="src src-js"><span style="color: #4f97d7; font-weight: bold;">function</span> <span style="color: #bc6ec5; font-weight: bold;">setup</span><span style="color: #4f97d7;">()</span> <span style="color: #4f97d7;">{</span>
+  createCanvas<span style="color: #bc6ec5;">(</span><span style="color: #a45bad;">300</span>, <span style="color: #a45bad;">100</span><span style="color: #bc6ec5;">)</span>;
+  background<span style="color: #bc6ec5;">(</span><span style="color: #2d9574;">"lightblue"</span><span style="color: #bc6ec5;">)</span>;
+  <span style="color: #2aa1ae; background-color: #292e34;">// </span><span style="color: #2aa1ae; background-color: #292e34;">jos leveys on suurempi kuin korkeus</span>
+  <span style="color: #4f97d7; font-weight: bold;">if</span> <span style="color: #bc6ec5;">(</span>width &gt; height<span style="color: #bc6ec5;">)</span>
+    triangle<span style="color: #bc6ec5;">(</span><span style="color: #a45bad;">0</span>, <span style="color: #a45bad;">0</span>, width, height / <span style="color: #a45bad;">2</span>, <span style="color: #a45bad;">0</span>, height<span style="color: #bc6ec5;">)</span>; <span style="color: #2aa1ae; background-color: #292e34;">// </span><span style="color: #2aa1ae; background-color: #292e34;">kolmio oikealle</span>
+  <span style="color: #4f97d7; font-weight: bold;">else</span> <span style="color: #2aa1ae; background-color: #292e34;">// </span><span style="color: #2aa1ae; background-color: #292e34;">muussa tapauksessa</span>
+    triangle<span style="color: #bc6ec5;">(</span><span style="color: #a45bad;">0</span>, <span style="color: #a45bad;">0</span>, width, <span style="color: #a45bad;">0</span>, width / <span style="color: #a45bad;">2</span>, height<span style="color: #bc6ec5;">)</span>; <span style="color: #2aa1ae; background-color: #292e34;">// </span><span style="color: #2aa1ae; background-color: #292e34;">kolmio alas</span>
+<span style="color: #4f97d7;">}</span>
 </pre>
 </div>
 </div>
 </div>
-<div id="outline-container-orgc5b2519" class="outline-3">
-<h3 id="orgc5b2519"><code>if-else</code> -rakenne</h3>
-<div class="outline-text-3" id="text-orgc5b2519">
+<div id="outline-container-org193e29e" class="outline-3">
+<h3 id="org193e29e"><code>if-else</code> -rakenne</h3>
+<div class="outline-text-3" id="text-org193e29e">
 <blockquote>
 <p>
 <code>if-else</code> -rakenteessa on
@@ -351,9 +351,9 @@ näppäinkomennolla <code>shift+tab</code>.
 </p>
 </div>
 </div>
-<div id="outline-container-org201a389" class="outline-3">
-<h3 id="org201a389">Lukujen vertaileminen</h3>
-<div class="outline-text-3" id="text-org201a389">
+<div id="outline-container-org878866c" class="outline-3">
+<h3 id="org878866c">Lukujen vertaileminen</h3>
+<div class="outline-text-3" id="text-org878866c">
 <p>
 Jos <code>if-else</code> -rakenteen ehdossa vertaillaan lukuja, tarvitaan
 lukujen vertailuoperaattoreita.
@@ -417,9 +417,9 @@ Lukujen <code>a</code> ja <code>b</code> yhtäsuuruus testataan vertailuoperaatt
 </blockquote>
 </div>
 </div>
-<div id="outline-container-org3eab260" class="outline-3">
-<h3 id="org3eab260">Esimerkki 2</h3>
-<div class="outline-text-3" id="text-org3eab260">
+<div id="outline-container-orgd264650" class="outline-3">
+<h3 id="orgd264650">Esimerkki 2</h3>
+<div class="outline-text-3" id="text-orgd264650">
 <p>
 Piirretään neliön muotoiseen piirtoikkunaan ympyrä tai nelikulmio
 riippuen vakion <code>P</code> arvosta. Jos <code>P</code> on alle 95 piirretään ympyrä,
@@ -430,15 +430,15 @@ muuten nelikulmio.
 Ensin vakio on suurempi kuin 95, joten piirretään nelikulmio.
 </p>
 <div class="org-src-container">
-<pre class="src src-js" id="org60d94ed">function setup() {
-  createCanvas(250, 250);
-  background("lightblue");
-  const P = 96;
-  if (P &lt; 95)
-    ellipse (100, 100, 100, 100);
-  else
-    rect (50, 50, 100, 100);
-}
+<pre class="src src-js" id="org8e9f547"><span style="color: #4f97d7; font-weight: bold;">function</span> <span style="color: #bc6ec5; font-weight: bold;">setup</span><span style="color: #4f97d7;">()</span> <span style="color: #4f97d7;">{</span>
+  createCanvas<span style="color: #bc6ec5;">(</span><span style="color: #a45bad;">250</span>, <span style="color: #a45bad;">250</span><span style="color: #bc6ec5;">)</span>;
+  background<span style="color: #bc6ec5;">(</span><span style="color: #2d9574;">"lightblue"</span><span style="color: #bc6ec5;">)</span>;
+  <span style="color: #4f97d7; font-weight: bold;">const</span> <span style="color: #7590db;">P</span> = <span style="color: #a45bad;">96</span>;
+  <span style="color: #4f97d7; font-weight: bold;">if</span> <span style="color: #bc6ec5;">(</span>P &lt; <span style="color: #a45bad;">95</span><span style="color: #bc6ec5;">)</span>
+    ellipse <span style="color: #bc6ec5;">(</span><span style="color: #a45bad;">100</span>, <span style="color: #a45bad;">100</span>, <span style="color: #a45bad;">100</span>, <span style="color: #a45bad;">100</span><span style="color: #bc6ec5;">)</span>;
+  <span style="color: #4f97d7; font-weight: bold;">else</span>
+    rect <span style="color: #bc6ec5;">(</span><span style="color: #a45bad;">50</span>, <span style="color: #a45bad;">50</span>, <span style="color: #a45bad;">100</span>, <span style="color: #a45bad;">100</span><span style="color: #bc6ec5;">)</span>;
+<span style="color: #4f97d7;">}</span>
 </pre>
 </div>
 <p>
@@ -451,14 +451,14 @@ src="https://editor.p5js.org/reima/embed/G9RWcdePk"></iframe>
 Kun vakion arvoa lasketaan, piirretään ympyrä.
 </p>
 <div class="org-src-container">
-<pre class="src src-js" id="org0f35a44">function setup() {
-  createCanvas(250, 250);
-  const P = 93;
-  if (P &lt; 95)
-    ellipse (100, 100, 100, 100);
-  else
-    rect (50, 50, 100, 100);
-}
+<pre class="src src-js" id="orgefe935b"><span style="color: #4f97d7; font-weight: bold;">function</span> <span style="color: #bc6ec5; font-weight: bold;">setup</span><span style="color: #4f97d7;">()</span> <span style="color: #4f97d7;">{</span>
+  createCanvas<span style="color: #bc6ec5;">(</span><span style="color: #a45bad;">250</span>, <span style="color: #a45bad;">250</span><span style="color: #bc6ec5;">)</span>;
+  <span style="color: #4f97d7; font-weight: bold;">const</span> <span style="color: #7590db;">P</span> = <span style="color: #a45bad;">93</span>;
+  <span style="color: #4f97d7; font-weight: bold;">if</span> <span style="color: #bc6ec5;">(</span>P &lt; <span style="color: #a45bad;">95</span><span style="color: #bc6ec5;">)</span>
+    ellipse <span style="color: #bc6ec5;">(</span><span style="color: #a45bad;">100</span>, <span style="color: #a45bad;">100</span>, <span style="color: #a45bad;">100</span>, <span style="color: #a45bad;">100</span><span style="color: #bc6ec5;">)</span>;
+  <span style="color: #4f97d7; font-weight: bold;">else</span>
+    rect <span style="color: #bc6ec5;">(</span><span style="color: #a45bad;">50</span>, <span style="color: #a45bad;">50</span>, <span style="color: #a45bad;">100</span>, <span style="color: #a45bad;">100</span><span style="color: #bc6ec5;">)</span>;
+<span style="color: #4f97d7;">}</span>
 </pre>
 </div>
 <p>
@@ -469,9 +469,9 @@ src="https://editor.p5js.org/reima/embed/Za_cnBFYt"></iframe>
 </p>
 </div>
 </div>
-<div id="outline-container-org4774d08" class="outline-3">
-<h3 id="org4774d08">Pelkkä <code>if</code>-rakenne</h3>
-<div class="outline-text-3" id="text-org4774d08">
+<div id="outline-container-org695756d" class="outline-3">
+<h3 id="org695756d">Pelkkä <code>if</code>-rakenne</h3>
+<div class="outline-text-3" id="text-org695756d">
 <p>
 Seuraavassa esimerkissä piirretään neliö neliön muotoiseen
 piirtoikkunan keskelle. Piirtoikkunan vasempaan yläkulmaan
@@ -480,18 +480,18 @@ tilaa. Neliön sivun pituuden määrää vakio <code>SIVU</code>.
 </p>
 
 <div class="org-src-container">
-<pre class="src src-js" id="org26b5794">function setup() {
-  createCanvas(200, 200);
-  background("lightblue");
-  const SIVU = 60;
+<pre class="src src-js" id="orgdd9313b"><span style="color: #4f97d7; font-weight: bold;">function</span> <span style="color: #bc6ec5; font-weight: bold;">setup</span><span style="color: #4f97d7;">()</span> <span style="color: #4f97d7;">{</span>
+  createCanvas<span style="color: #bc6ec5;">(</span><span style="color: #a45bad;">200</span>, <span style="color: #a45bad;">200</span><span style="color: #bc6ec5;">)</span>;
+  background<span style="color: #bc6ec5;">(</span><span style="color: #2d9574;">"lightblue"</span><span style="color: #bc6ec5;">)</span>;
+  <span style="color: #4f97d7; font-weight: bold;">const</span> <span style="color: #7590db;">SIVU</span> = <span style="color: #a45bad;">60</span>;
 
-  // keskelle piirrettävän neliön koordinaatit (x- ja y-koordinaatti sama)
-  const X = width / 2.0 - SIVU / 2.0;
-  rect (X, X, SIVU, SIVU);
+  <span style="color: #2aa1ae; background-color: #292e34;">// </span><span style="color: #2aa1ae; background-color: #292e34;">keskelle piirrett&#228;v&#228;n neli&#246;n koordinaatit (x- ja y-koordinaatti sama)</span>
+  <span style="color: #4f97d7; font-weight: bold;">const</span> <span style="color: #7590db;">X</span> = width / <span style="color: #a45bad;">2</span>.<span style="color: #a45bad;">0</span> - SIVU / <span style="color: #a45bad;">2</span>.<span style="color: #a45bad;">0</span>;
+  rect <span style="color: #bc6ec5;">(</span>X, X, SIVU, SIVU<span style="color: #bc6ec5;">)</span>;
 
-  if (X &gt;= SIVU)
-    rect (0, 0, SIVU, SIVU);
-} 
+  <span style="color: #4f97d7; font-weight: bold;">if</span> <span style="color: #bc6ec5;">(</span>X &gt;= SIVU<span style="color: #bc6ec5;">)</span>
+    rect <span style="color: #bc6ec5;">(</span><span style="color: #a45bad;">0</span>, <span style="color: #a45bad;">0</span>, SIVU, SIVU<span style="color: #bc6ec5;">)</span>;
+<span style="color: #4f97d7;">}</span> 
 </pre>
 </div>
 <p>
@@ -506,18 +506,18 @@ piirretä.
 </p>
 
 <div class="org-src-container">
-<pre class="src src-javascript" id="org81de8ed">function setup() {
-  createCanvas(200, 200);
-  background("lightblue");
-  const SIVU = 80;
+<pre class="src src-javascript" id="orga3115f8"><span style="color: #4f97d7; font-weight: bold;">function</span> <span style="color: #bc6ec5; font-weight: bold;">setup</span><span style="color: #4f97d7;">()</span> <span style="color: #4f97d7;">{</span>
+  createCanvas<span style="color: #bc6ec5;">(</span><span style="color: #a45bad;">200</span>, <span style="color: #a45bad;">200</span><span style="color: #bc6ec5;">)</span>;
+  background<span style="color: #bc6ec5;">(</span><span style="color: #2d9574;">"lightblue"</span><span style="color: #bc6ec5;">)</span>;
+  <span style="color: #4f97d7; font-weight: bold;">const</span> <span style="color: #7590db;">SIVU</span> = <span style="color: #a45bad;">80</span>;
 
-  // keskelle piirrettävän neliön koordinaatit (x- ja y-koordinaatti sama)
-  const X = width / 2.0 - SIVU / 2.0;
-  rect (X, X, SIVU, SIVU);
+  <span style="color: #2aa1ae; background-color: #292e34;">// </span><span style="color: #2aa1ae; background-color: #292e34;">keskelle piirrett&#228;v&#228;n neli&#246;n koordinaatit (x- ja y-koordinaatti sama)</span>
+  <span style="color: #4f97d7; font-weight: bold;">const</span> <span style="color: #7590db;">X</span> = width / <span style="color: #a45bad;">2</span>.<span style="color: #a45bad;">0</span> - SIVU / <span style="color: #a45bad;">2</span>.<span style="color: #a45bad;">0</span>;
+  rect <span style="color: #bc6ec5;">(</span>X, X, SIVU, SIVU<span style="color: #bc6ec5;">)</span>;
 
-  if (X &gt;= SIVU)
-    rect (0, 0, SIVU, SIVU);
-} 
+  <span style="color: #4f97d7; font-weight: bold;">if</span> <span style="color: #bc6ec5;">(</span>X &gt;= SIVU<span style="color: #bc6ec5;">)</span>
+    rect <span style="color: #bc6ec5;">(</span><span style="color: #a45bad;">0</span>, <span style="color: #a45bad;">0</span>, SIVU, SIVU<span style="color: #bc6ec5;">)</span>;
+<span style="color: #4f97d7;">}</span> 
 </pre>
 </div>
 <p>
@@ -542,9 +542,9 @@ if (ehto)
 </blockquote>
 </div>
 </div>
-<div id="outline-container-org4dc99e5" class="outline-3">
-<h3 id="org4dc99e5">Tehtäviä</h3>
-<div class="outline-text-3" id="text-org4dc99e5">
+<div id="outline-container-org514959c" class="outline-3">
+<h3 id="org514959c">Tehtäviä</h3>
+<div class="outline-text-3" id="text-org514959c">
 <ol class="org-ol">
 <li>Kirjoita ohjelma, joka asettaa piirtoikkunan taustan väriksi
 vihreä värin, jos vakion <code>P</code> arvo on vähintään 100. Muussa
