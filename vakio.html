@@ -1,0 +1,727 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>&lrm;</title>
+<meta name="generator" content="Org mode" />
+<style type="text/css">
+ <!--/*--><![CDATA[/*><!--*/
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #ccc;
+    box-shadow: 3px 3px 3px #eee;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: visible;
+    padding-top: 1.2em;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    background-color: white;
+    top: -10px;
+    right: 10px;
+    padding: 3px;
+    border: 1px solid black;
+  }
+  pre.src:hover:before { display: inline;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-hledger:before { content: 'hledger'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'Javascript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .equation-container {
+    display: table;
+    text-align: center;
+    width: 100%;
+  }
+  .equation {
+    vertical-align: middle;
+  }
+  .equation-label {
+    display: table-cell;
+    text-align: right;
+    vertical-align: middle;
+  }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { width: 90%; }
+  /*]]>*/-->
+</style>
+<link rel="additional stylesheet" type="text/css" href="ohjelmointi.css" />
+<script type="text/javascript">
+/*
+@licstart  The following is the entire license notice for the
+JavaScript code in this tag.
+
+Copyright (C) 2012-2019 Free Software Foundation, Inc.
+
+The JavaScript code in this tag is free software: you can
+redistribute it and/or modify it under the terms of the GNU
+General Public License (GNU GPL) as published by the Free Software
+Foundation, either version 3 of the License, or (at your option)
+any later version.  The code is distributed WITHOUT ANY WARRANTY;
+without even the implied warranty of MERCHANTABILITY or FITNESS
+FOR A PARTICULAR PURPOSE.  See the GNU GPL for more details.
+
+As additional permission under GNU GPL version 3 section 7, you
+may distribute non-source (e.g., minimized or compacted) forms of
+that code without the copy of the GNU GPL normally required by
+section 4, provided you include this license notice and a URL
+through which recipients can access the Corresponding Source.
+
+
+@licend  The above is the entire license notice
+for the JavaScript code in this tag.
+*/
+<!--/*--><![CDATA[/*><!--*/
+ function CodeHighlightOn(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(null != target) {
+     elem.cacheClassElem = elem.className;
+     elem.cacheClassTarget = target.className;
+     target.className = "code-highlighted";
+     elem.className   = "code-highlighted";
+   }
+ }
+ function CodeHighlightOff(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(elem.cacheClassElem)
+     elem.className = elem.cacheClassElem;
+   if(elem.cacheClassTarget)
+     target.className = elem.cacheClassTarget;
+ }
+/*]]>*///-->
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
+</head>
+<body>
+<div id="content">
+<div id="outline-container-orgf6d5ec1" class="outline-2">
+<h2 id="orgf6d5ec1">Vakio</h2>
+<div class="outline-text-2" id="text-orgf6d5ec1">
+</div>
+<div id="outline-container-orgb222ba1" class="outline-3">
+<h3 id="orgb222ba1">Vakio</h3>
+<div class="outline-text-3" id="text-orgb222ba1">
+<p>
+Edellisessä kappaleissa kaikki koordinaatit on laskettu käsin ennen
+kuvien piirtämisessä. Yleensä ohjelmoinnissa ei tehdä näin, vaan
+koordinaatit lasketaan ohjelmassa annetuista tiedoista. Annetut
+tiedot voidaan tallentaa <i>vakioihin</i>.
+</p>
+
+<blockquote>
+<p>
+Tietokoneohjelman <i>vakio</i> on nimetty muistipaikka, johon voidaan
+tallentaa mm. lukuja. Vakion arvo ei muutu ohjelman suorituksen
+aikana.
+</p>
+</blockquote>
+
+<p>
+Alla olevassa esimerkissä määritellään vakio <code>SIVU</code>, jonka arvoksi
+asetetaan 128. Sana <code>const</code> (<i>constant</i>, &ldquo;vakio&rdquo;) tarkoittaa, että kyseessä on vakio. Kahden luvun tulo lasketaan ohjelmassa
+<i>kertolukuoperaattorin</i> <code>*</code> avulla. Ohjelma piirtää kolme neliötä,
+joiden sivun pituus on <code>SIVU</code>. Vierekkäiset neliöt koskevat
+toisiinsa yhdessä kulmapisteessä.
+</p>
+
+<div class="org-src-container">
+<pre class="src src-js">function setup() {
+  createCanvas(600, 400);
+  const SIVU = 128; // vakio
+
+  colorMode(HSB, 100);
+  background(59, 21, 87);
+  fill(58, 98, 59);
+
+  rect(0, 0, SIVU, SIVU); // neliö ikkunan vasemmassa yläkulmassa
+  rect(SIVU, SIVU, SIVU, SIVU); // toinen neliö koskettaa ensimmäistä
+  rect(2 * SIVU, 2 * SIVU, SIVU, SIVU); // kolmas koskettaa toista
+ }
+</pre>
+</div>
+<p>
+Verrataan ohjelmaa toiseen, jossa ei käytetä vakioita. Molemmat ohjelmat
+piirtävät saman kuvan.
+</p>
+<div class="org-src-container">
+<pre class="src src-js">function setup() {
+  createCanvas(600, 400);
+
+  colorMode(HSB, 100);
+  background(59, 21, 87);
+  fill(58, 98, 59);
+
+  rect(0, 0, 128, 128);
+  rect(128, 128, 128, 128);
+  rect(256, 256, 128, 128);
+}
+</pre>
+</div>
+
+<p>
+<iframe
+style="width: 400px; height: 400px; overflow: hidden;"
+scrolling="no" frameborder="0"
+src="https://editor.p5js.org/reima/embed/a0-2g9GiH"></iframe>
+</p>
+
+<p>
+Jo näin pienessä ohjelmassa vakion käytöllä on useita hyviä puolia.
+</p>
+<ul class="org-ul">
+<li>Ensimmäisestä ohjelmakoodista nähdään <i>heti</i>, että
+<ul class="org-ul">
+<li>ohjelmassa esiintyvä luku 128 on nimenomaan neliön sivun pituus</li>
+<li>kaikki suorakulmiot ovat neliöitä ja että niillä kaikilla on sama
+sivun pituus</li>
+<li>toisen neliön vasen yläkulma on tarkoituksellisesti
+koordinaateissa <code>(SIVU, SIVU)</code></li>
+<li>kolmannen neliön vasen yläkulma on tarkoituksellisesti
+koordinaateissa <code>(2 * SIVU, 2 * SIVU)</code>.</li>
+</ul></li>
+<li>Kolmannen neliön koordinaatit lasketaan ohjelmassa automaattisesti.</li>
+</ul>
+
+<p>
+Eikä siinä vielä kaikki. Kuvitellaanpa, että haluamme muuttaa
+neliön sivun pituutta. Ohjelman ensimmäisessä versiossa tarvitsee
+muuttaa vain yhtä lukua ohjelmassa, ja kaikki muut arvot muuttuvat
+automaattisesti.
+</p>
+
+<div class="org-src-container">
+<pre class="src src-js">function setup() {
+  createCanvas(600, 400);
+  const SIVU = 87; // sivun pituus muuttuu
+
+  colorMode(HSB, 100);
+  background(59, 21, 87);
+  fill(58, 98, 59);
+
+  rect(0, 0, SIVU, SIVU); // neliö ikkunan vasemmassa yläkulmassa
+  rect(SIVU, SIVU, SIVU, SIVU); // toinen neliö koskettaa ensimmäistä
+  rect(2 * SIVU, 2 * SIVU, SIVU, SIVU); // kolmas koskettaa toista
+}
+</pre>
+</div>
+
+<p>
+Toisessa versioissa täytyisi muuttaa kaikkia nollasta poikkeavia
+koordinaatteja.
+</p>
+
+<blockquote>
+<p>
+Jos jotain lukua käytetään ohjelmassa useassa kohdassa, luku
+määritellään yleensä vakiona. Myös vain yhdessä kohdassa käytetty
+luku on usein hyvä määrittää vakiona, koska näin annetaan
+ohjelmakoodin lukijalle selitys sekä luvun arvolle että
+merkitykselle.
+</p>
+</blockquote>
+
+<p>
+Monet ohjelmoijat kirjoittavat vakioiden nimet isoilla kirjaimilla
+erottaakseen ne <i>muuttujista</i>, joista myöhemmin lisää. Sillä onko
+vakion nimi kirjoitettu isoilla vai pienillä kirjamilla ei ole
+merkitystä, kunhan nimi kirjoitetaan koko ajan samalla tavalla.
+</p>
+
+<blockquote>
+<p>
+Vakion nimi on yksi sana, ja se täytyy kirjoittaa koko ajan samalla
+tavalla. Isoja kirjaimia ei voi vaihtaa pieniin tai toisin
+päin. Vakion nimessä voi käyttää kirjaimia <code>a-z</code>, <code>A-Z</code>, numeroita
+<code>0-9</code> sekä alaviivaa <code>_</code>. Vakion nimi ei voi alkaa numerolla.
+</p>
+
+<p>
+Jotkut sanat ovat ohjelmointikielen <i>varattuna sanoja</i>, eikä niitä
+voi käyttää vakioiden niminä. Tällaisia ovat mm. <code>const</code> sekä
+<code>let</code>.
+</p>
+</blockquote>
+</div>
+</div>
+<div id="outline-container-org8c63427" class="outline-3">
+<h3 id="org8c63427">Laskutoimituksia vakioilla</h3>
+<div class="outline-text-3" id="text-org8c63427">
+<p>
+p5.js-ohjelmissa kerto-, yhteen- ja vähennyslaskuun
+käytetyt merkit ovat seuraavat.
+</p>
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-left" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-left">laskutoimitus</th>
+<th scope="col" class="org-left">merkki</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-left">kertolasku</td>
+<td class="org-left"><code>*</code></td>
+</tr>
+
+<tr>
+<td class="org-left">yhteenlasku</td>
+<td class="org-left"><code>+</code></td>
+</tr>
+
+<tr>
+<td class="org-left">vähennyslasku</td>
+<td class="org-left"><code>-</code></td>
+</tr>
+</tbody>
+</table>
+
+<p>
+Yleisesti ohjelmointikielet tuntevat laskujärjestyksen.
+Sulkuja voidaan tarvittaessa käyttää ryhmittelyssä.
+Vakioiden avulla voidaan laskea toisia vakioita.
+Tästä esimerkki seuraavassa. Esimerkissä piirretään
+vierekkäin kolme suorakulmiota, joiden leveyden ja korkeuden suhde
+on \(1 : 2.\) Suorakulmioiden väliin jäteteään aina tilaa 10
+yksikön verran. Leveyttä ja väliä voidaan säätää vakioiden avulla.
+</p>
+
+<div class="org-src-container">
+<pre class="src src-js">function setup(){
+    createCanvas(600, 400);
+    const LEVEYS = 80;
+    const VALI = 10;
+
+    // vakio korkeus lasketaan leveydestä
+    const KORKEUS = 2 * LEVEYS;
+
+    rect(0, 0, LEVEYS, KORKEUS);
+    rect(LEVEYS + VALI, 0, LEVEYS, KORKEUS);
+    rect(2 * (LEVEYS + VALI), 0, LEVEYS, KORKEUS);
+  }
+</pre>
+</div>
+
+<blockquote>
+<p>
+Ohjelmakoodissa vakion arvo voidaan laskea toisista vakioista
+vakion määrittelevällä rivillä.
+</p>
+</blockquote>
+</div>
+</div>
+
+<div id="outline-container-org7f1cb94" class="outline-3">
+<h3 id="org7f1cb94">Esimerkki 1</h3>
+<div class="outline-text-3" id="text-org7f1cb94">
+<p>
+Tässä esimerkissä piirretään mustalle pohjalle valkoinen
+suunnikas. Seuraavat vakiot ja ominaisuudet määrittävät kuvion
+mitat.
+</p>
+<ul class="org-ul">
+<li><code>KANTA</code> on suunnikkaan kannan pituus ja <code>KORKEUS</code> suunnikkaan
+korkeus</li>
+<li><code>OIKEA_YLAKULMA_X</code> on suunnikkaan oikean yläkulman
+\(x\)-koordinaatti; \(y\)-koordinaatti on aina 0</li>
+<li><code>VASEN_ALAKULMA_X</code> on suunnikkaan vasemman alakulman
+\(x\)-koordinaatti</li>
+</ul>
+
+<p>
+Suunnikkaan vasemman yläkulman sekä oikean alakulman
+\(x\)-koordinaatit voidaan laskea annetuista tiedoista.
+</p>
+
+<div class="org-src-container">
+<pre class="src src-js">function setup() {
+  createCanvas(600, 400);
+
+  // kuvion mitat määrittävät vakiot
+  const KANTA = 250; // suunnikkaan leveys
+  const KORKEUS = 330; // suunnikkaan korkeus
+  // suunnikkaan vasemman yläkulman x-koordinaatti
+  const OIKEA_YLAKULMA_X = 400;
+  // suunnikkaan vasemman alakulman x-koordinaatti
+  const VASEN_ALAKULMA_X = 80;
+
+  // lasketaan vielä tuntemattomat x-koordinaatit ja tallennetaan ne
+  // vakioihin
+  const VASEN_YLAKULMA_X = OIKEA_YLAKULMA_X - KANTA;
+  const OIKEA_ALAKULMA_X = VASEN_ALAKULMA_X + KANTA;
+
+  colorMode(HSB, 100);
+  noStroke ();
+  background(0);
+
+  quad (VASEN_YLAKULMA_X, 0,
+        OIKEA_YLAKULMA_X, 0,
+        OIKEA_ALAKULMA_X, KORKEUS,
+        VASEN_ALAKULMA_X, KORKEUS);
+ }
+</pre>
+</div>
+<p>
+<iframe
+style="width: 600px; height: 400px; overflow: hidden;"
+scrolling="no" frameborder="0"n
+src="https://editor.p5js.org/reima/embed/lVkJaxhjr"></iframe>   </p>
+
+<p>
+Pelkästään vakioiden arvoja muuttamalla voidaan samalla
+ohjelmakoodilla piirtää seuraavanlainen kuvio.
+</p>
+
+<div class="org-src-container">
+<pre class="src src-js">function setup() {
+  createCanvas(600, 400);
+
+  // kuvion mitat määrittävät vakiot
+  const KANTA = 350; // suunnikkaan leveys
+  const KORKEUS = 50; // suunnikkaan korkeus
+  // suunnikkaan vasemman yläkulman x-koordinaatti
+  const OIKEA_YLAKULMA_X = 400;
+  // suunnikkaan vasemman alakulman x-koordinaatti
+  const VASEN_ALAKULMA_X = 80;
+
+  // lasketaan vielä tuntemattomat x-koordinaatit ja tallennetaan ne
+  // vakioihin
+  const VASEN_YLAKULMA_X = OIKEA_YLAKULMA_X - KANTA;
+  const OIKEA_ALAKULMA_X = VASEN_ALAKULMA_X + KANTA;
+
+  colorMode(HSB, 100);
+  noStroke ();
+  background(0);
+
+  quad (VASEN_YLAKULMA_X, 0,
+        OIKEA_YLAKULMA_X, 0,
+        OIKEA_ALAKULMA_X, KORKEUS,
+        VASEN_ALAKULMA_X, KORKEUS);
+}
+</pre>
+</div>
+<p>
+<iframe
+style="width: 600px; height: 400px; overflow: hidden;"
+scrolling="no" frameborder="0"n
+src="https://editor.p5js.org/reima/embed/EqnFF0hZV"></iframe>
+</p>
+</div>
+</div>
+<div id="outline-container-org2b5f0b2" class="outline-3">
+<h3 id="org2b5f0b2">Tehtävät</h3>
+<div class="outline-text-3" id="text-org2b5f0b2">
+<ol class="org-ol">
+<li>Piirrä \((400\times 400)\)-kokoiseen piirtoikkunaan neliö, jonka
+vasen yläkulma on koordinaateissa \((0, 0).\) Määrittele neliön
+sivun pituus vakiona <code>SIVU</code>, jonka arvo on ensimmäisessä
+versiossasi 200. Muuntele vakion suuruutta ja varmista, että
+ohjelmasi toimii kuten pitääkin.</li>
+<li><p>
+Piirrä \((400\times 400)\)-kokoiseen piirtoikkunaan alla olevan
+kuvan mukaisesti suorakulmio, jonka leveyden ja korkeuden suhde
+on aina \(3:1,\) ja jonka korkeutta voit säädellä vakion
+<code>KORKEUS</code> avulla. Suorakaiteen vasen yläkulma on
+\(y\)-akselilla, ja vasemman yläkulman etäisyys origosta on sama
+kuin suorakaiteen korkeus. Muuntele vakion suuruutta.
+</p>
+<p>
+<iframe
+style="width: 400px; height: 400px; overflow: hidden;"
+scrolling="no" frameborder="0"
+src="https://editor.p5js.org/reima/embed/ZKQRH08G2"></iframe>
+</p></li>
+<li><p>
+Piirrä \((400\times 400)\)-kokoiseen piirtoikkunaan alla olevan
+kuvan mukaisesti kaksi suorakulmaista tasakylkistä
+kolmiota. Kolmioiden kylkien pituutta sekä kolmioiden välistä
+etäisyyttä \(x\)-akselilla täytyy voida säätää vakioiden <code>KYLKI</code>
+sekä <code>VALI</code> avulla. Molempien kolmioiden kaksi kärkipistettä on
+aina \(x\)-akselilla, ja vasemmanpuoleisen kolmion yksi
+kärkipiste on origossa. Muuntele vakioiden suuruuksia.
+</p>
+
+<p>
+<iframe
+style="width: 400px; height: 400px; overflow: hidden;"
+scrolling="no" frameborder="0"
+src="https://editor.p5js.org/reima/embed/IkQillX75"></iframe>
+</p></li>
+<li><p>
+Piirrä \((600\times 400)\)-kokoiseen piirtoikkunaan siniselle
+pohjalle musta suorakulmio ja suorakulmion sisään valkoinen
+suunnikas alla olevan kuvion mukaisesti. Suorakulmion vasen
+yläkulma on origossa. Seuraavat vakiot määräävät kuvan tarkan
+sisällön.
+</p>
+<ul class="org-ul">
+<li><code>LEVEYS</code> on suorakulmion leveys</li>
+<li><code>KORKEUS</code> on suorakulmion korkeus</li>
+<li><code>SUUNNIKAS_X</code> on suunnikkaan \(x\)-akselilla sijaitsevan
+kärkipisteen \(x\)-koordinaatti</li>
+<li><code>SUUNNIKAS_Y</code> on suunnikkaan \(y\)-akselilla sijaitsevan
+kärkipisteen \(y\)-koordinaatti.</li>
+</ul>
+<p>
+Muuntele vakioiden suuruuksia.
+</p>
+
+<p>
+<iframe
+style="width: 600px; height: 400px; overflow: hidden;"
+scrolling="no" frameborder="0"
+src="https://editor.p5js.org/reima/embed/rjXkSNx_R"></iframe>
+</p></li>
+<li>Piirrä \((400\times 400)\)-kokoiseen piirtoikkunaan valkoiselle
+taustalle alla olevan kuvan mukaisesti kolme neliötä. Seuraavat
+vakiot määräävät ohjelman tarkan toimintatavan.
+<ul class="org-ul">
+<li><code>SUURI_SIVU</code> on suuren neliön sivun pituus</li>
+<li><code>PIENI_SIVU</code> on pienien neliöiden sivun pituus</li>
+<li><code>SUURI_SAVY</code> on suuren neliön värisävy</li>
+<li><code>SAVY_MUUTOS</code> on värisävymuutos suuren neliön sävystä pienten
+neliöiden sävyyn; vasemman yläkulman pienen neliön sävyyn tämä
+muutos lisätään kerran, oikean alakulman pienen neliön sävyyn
+muutos lisätään kaksinkertaisena</li>
+<li><code>KYLLAISYYS</code> on kaikkien värien kylläisyys ja <code>KIRKKAUS</code></li>
+</ul></li>
+</ol>
+<p>
+kaikkien värien kirkkaus.
+</p>
+
+<p>
+Suuren neliön vasen yläkulma on origossa ja pienten neliöiden
+yksi kärkipiste suuren neliön kärkipisteessä. Muuntele vakioiden
+suuruuksia.
+</p>
+<p>
+<iframe
+style="width: 400px; height: 400px; overflow: hidden;"
+scrolling="no" frameborder="0"
+src="https://editor.p5js.org/reima/embed/ZBhrZe_d1"></iframe>
+</p>
+<ol class="org-ol">
+<li><p>
+Alla olevaan piirtoikkunaan on piirretty
+</p>
+<ul class="org-ul">
+<li>punaisella ne piirtoikkunan pisteet, joille pätee \(y = x\)</li>
+<li>vihreällä ne piirtoikkunan pisteet, joille pätee \(y = 2x\)</li>
+<li>sinisellä ne piirtoikkunan pisteet, joille pätee \(y = 3x.\)</li>
+</ul>
+<p>
+Yleisesti ne piirtoikkunan pisteet, joille pätee \(y = K\cdot
+      x,\) missä \(K\) on jokin vakio, sijaitsevat origon kautta
+kulkevalla suoralla.
+</p>
+<p>
+<iframe
+style="width: 400px; height: 400px; overflow: hidden;"
+scrolling="no" frameborder="0"
+src="https://editor.p5js.org/reima/embed/bragE7RlY"></iframe>
+</p>
+<p>
+Piirrä \((400\times 400)\)-kokoiseen piirtoikkunaan alla olevan
+kuvan mukaisesti kaksi suorakulmioita. Suuremman ja pienemmän
+suorakulmion leveyksien suhden on \(2:1.\) Seuraavat
+vakiot määräävät ohjelman tarkan toimintatavan.
+</p>
+<ul class="org-ul">
+<li><code>K</code> määrittää origon kautta kulkevan suoran \(y = K\cdot x,\)
+jolla molempien suorakulmioiden kaksi kärkipistettä
+sijaitsevat</li>
+<li><code>LEVEYS_PIENI</code> on pienemmän suorakulmion leveys</li>
+</ul>
+<p>
+Muuntele vakioiden suuruuksia.
+</p>
+
+<p>
+<iframe
+style="width: 400px; height: 400px; overflow: hidden;"
+scrolling="no" frameborder="0"
+src="https://editor.p5js.org/reima/embed/bS8tLzutR"></iframe>
+</p></li>
+</ol>
+</div>
+</div>
+</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,589 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>&lrm;</title>
+<meta name="generator" content="Org mode" />
+<style type="text/css">
+ <!--/*--><![CDATA[/*><!--*/
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #ccc;
+    box-shadow: 3px 3px 3px #eee;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: visible;
+    padding-top: 1.2em;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    background-color: white;
+    top: -10px;
+    right: 10px;
+    padding: 3px;
+    border: 1px solid black;
+  }
+  pre.src:hover:before { display: inline;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-hledger:before { content: 'hledger'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'Javascript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .equation-container {
+    display: table;
+    text-align: center;
+    width: 100%;
+  }
+  .equation {
+    vertical-align: middle;
+  }
+  .equation-label {
+    display: table-cell;
+    text-align: right;
+    vertical-align: middle;
+  }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { width: 90%; }
+  /*]]>*/-->
+</style>
+<link rel="additional stylesheet" type="text/css" href="ohjelmointi.css" />
+<script type="text/javascript">
+/*
+@licstart  The following is the entire license notice for the
+JavaScript code in this tag.
+
+Copyright (C) 2012-2019 Free Software Foundation, Inc.
+
+The JavaScript code in this tag is free software: you can
+redistribute it and/or modify it under the terms of the GNU
+General Public License (GNU GPL) as published by the Free Software
+Foundation, either version 3 of the License, or (at your option)
+any later version.  The code is distributed WITHOUT ANY WARRANTY;
+without even the implied warranty of MERCHANTABILITY or FITNESS
+FOR A PARTICULAR PURPOSE.  See the GNU GPL for more details.
+
+As additional permission under GNU GPL version 3 section 7, you
+may distribute non-source (e.g., minimized or compacted) forms of
+that code without the copy of the GNU GPL normally required by
+section 4, provided you include this license notice and a URL
+through which recipients can access the Corresponding Source.
+
+
+@licend  The above is the entire license notice
+for the JavaScript code in this tag.
+*/
+<!--/*--><![CDATA[/*><!--*/
+ function CodeHighlightOn(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(null != target) {
+     elem.cacheClassElem = elem.className;
+     elem.cacheClassTarget = target.className;
+     target.className = "code-highlighted";
+     elem.className   = "code-highlighted";
+   }
+ }
+ function CodeHighlightOff(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(elem.cacheClassElem)
+     elem.className = elem.cacheClassElem;
+   if(elem.cacheClassTarget)
+     target.className = elem.cacheClassTarget;
+ }
+/*]]>*///-->
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
+</head>
+<body>
+<div id="content">
+<div id="outline-container-orgea2f2a7" class="outline-2">
+<h2 id="orgea2f2a7">Ehdollinen suorittaminen</h2>
+<div class="outline-text-2" id="text-orgea2f2a7">
+</div>
+<div id="outline-container-org20e6c4a" class="outline-3">
+<h3 id="org20e6c4a">Esimerkki 1</h3>
+<div class="outline-text-3" id="text-org20e6c4a">
+<p>
+Haluamme kirjoittaa ohjelman, joka toimii seuraavasti.
+</p>
+<ul class="org-ul">
+<li>Jos piirtoikkunan leveys on suurempi kuin piirtoikkunan korkeus,
+piirretään &ldquo;oikealla osoittava&rdquo; kolmio.</li>
+</ul>
+<p>
+<iframe 
+style="width: 300px; height: 100px; overflow: hidden;"  
+scrolling="no" frameborder="0" align="middle" 
+src="https://editor.p5js.org/reima/embed/noH7dfqlo"></iframe>
+</p>
+<ul class="org-ul">
+<li>Muussa tapauksessa piirretään &ldquo;alas osoittava&rdquo;
+kolmio.</li>
+</ul>
+<p>
+<iframe 
+style="width: 100px; height: 200px; overflow: hidden;"  
+scrolling="no" frameborder="0" align="middle"
+src="https://editor.p5js.org/reima/embed/r5T3XqZyV"></iframe> 
+</p>
+<p>
+Ohjelma toimii siis eri tavoin eri tilanteissa. Tämä voidaan
+ohjelmoida <i>ehdollisen suorittamisen</i> avulla. Ehdollisessa
+suorittamisessa käytetään Processing-kielen varattuja sanoja <code>if</code>
+(jos) sekä <code>else</code> (muutoin).
+</p>
+
+<div class="org-src-container">
+<pre class="src src-js">function setup() {
+  createCanvas(300, 100);
+  background("lightblue");
+  // jos leveys on suurempi kuin korkeus
+  if (width &gt; height)
+    triangle(0, 0, width, height / 2, 0, height); // kolmio oikealle
+  else // muussa tapauksessa
+    triangle(0, 0, width, 0, width / 2, height); // kolmio alas
+}
+</pre>
+</div>
+</div>
+</div>
+<div id="outline-container-orgc5b2519" class="outline-3">
+<h3 id="orgc5b2519"><code>if-else</code> -rakenne</h3>
+<div class="outline-text-3" id="text-orgc5b2519">
+<blockquote>
+<p>
+<code>if-else</code> -rakenteessa on
+</p>
+<ol class="org-ol">
+<li><code>ehto</code>, joka määrää mikä lauseke suoritetaan</li>
+<li>lauseke, joka suoritetaan jos ehto on tosi</li>
+<li>lauseke, joka suoritetaan jos ehto ei ole tosi.</li>
+</ol>
+<pre class="example">
+if (ehto)
+  lauseke suoritetaan jos ehto tosi;
+else
+  lauseke suoritetaan jos ehto ei tosi;
+</pre>
+</blockquote>
+
+<p>
+Huomaa, että
+</p>
+<ul class="org-ul">
+<li><code>ehto</code> kirjoitetaan sulkujen sisään</li>
+<li><code>if</code>-rivin lopussa ei ole puolipistettä</li>
+<li><code>else</code>-rivin lopussa ei ole puolipistettä.</li>
+</ul>
+
+<p>
+Yleensä lausekerivit sisennetään, jotta nähdään mihin lausekkeeseen
+ehto vaikuttaa. <code>editor.p5js.org</code> -editori sisentää lausekkeet
+valikosta <code>Edit</code> \(\rightarrow\) <code>Tidy code</code> tai suoraan
+näppäinkomennolla <code>shift+tab</code>.
+</p>
+</div>
+</div>
+<div id="outline-container-org201a389" class="outline-3">
+<h3 id="org201a389">Lukujen vertaileminen</h3>
+<div class="outline-text-3" id="text-org201a389">
+<p>
+Jos <code>if-else</code> -rakenteen ehdossa vertaillaan lukuja, tarvitaan
+lukujen vertailuoperaattoreita.
+</p>
+
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-left" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-left">ehtolauseke</th>
+<th scope="col" class="org-left">merkitys</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-left"><code>a &lt; b</code></td>
+<td class="org-left">onko <code>a</code> pienempi kuin <code>b</code></td>
+</tr>
+
+<tr>
+<td class="org-left"><code>a &lt;= b</code></td>
+<td class="org-left">onko <code>a</code> pienempi tai yhtä suuri kuin <code>b</code></td>
+</tr>
+
+<tr>
+<td class="org-left"><code>a &gt; b</code></td>
+<td class="org-left">onko <code>a</code> suurempi kuin <code>b</code></td>
+</tr>
+
+<tr>
+<td class="org-left"><code>a &gt;= b</code></td>
+<td class="org-left">onko <code>a</code> suurempi tai yhtä suuri kuin <code>b</code></td>
+</tr>
+
+<tr>
+<td class="org-left"><code>a == b</code></td>
+<td class="org-left">onko <code>a</code> yhtä suuri kuin <code>b</code></td>
+</tr>
+
+<tr>
+<td class="org-left"><code>a != b</code></td>
+<td class="org-left">onko <code>a</code> eri suuri kuin <code>b</code></td>
+</tr>
+</tbody>
+</table>
+
+<p>
+Yllättävintä on yhtäsuuruuden testaaminen.
+</p>
+<blockquote>
+<p>
+Lukujen <code>a</code> ja <code>b</code> yhtäsuuruus testataan vertailuoperaattorilla
+<code>==</code>, jossa on kaksi yhtäsuuruusmerkkiä peräkkäin.
+</p>
+</blockquote>
+</div>
+</div>
+<div id="outline-container-org3eab260" class="outline-3">
+<h3 id="org3eab260">Esimerkki 2</h3>
+<div class="outline-text-3" id="text-org3eab260">
+<p>
+Piirretään neliön muotoiseen piirtoikkunaan ympyrä tai nelikulmio
+riippuen vakion <code>P</code> arvosta. Jos <code>P</code> on alle 95 piirretään ympyrä,
+muuten nelikulmio.
+</p>
+
+<p>
+Ensin vakio on suurempi kuin 95, joten piirretään nelikulmio.
+</p>
+<div class="org-src-container">
+<pre class="src src-js" id="org60d94ed">function setup() {
+  createCanvas(250, 250);
+  background("lightblue");
+  const P = 96;
+  if (P &lt; 95)
+    ellipse (100, 100, 100, 100);
+  else
+    rect (50, 50, 100, 100);
+}
+</pre>
+</div>
+<p>
+<iframe 
+style="width: 250px; height: 250px; overflow: hidden;"  
+scrolling="no" frameborder="0" align="middle"
+src="https://editor.p5js.org/reima/embed/G9RWcdePk"></iframe> 
+</p>
+<p>
+Kun vakion arvoa lasketaan, piirretään ympyrä.
+</p>
+<div class="org-src-container">
+<pre class="src src-js" id="org0f35a44">function setup() {
+  createCanvas(250, 250);
+  const P = 93;
+  if (P &lt; 95)
+    ellipse (100, 100, 100, 100);
+  else
+    rect (50, 50, 100, 100);
+}
+</pre>
+</div>
+<p>
+<iframe 
+style="width: 250px; height: 250px; overflow: hidden;"  
+scrolling="no" frameborder="0" align="middle" 
+src="https://editor.p5js.org/reima/embed/Za_cnBFYt"></iframe>
+</p>
+</div>
+</div>
+<div id="outline-container-org4774d08" class="outline-3">
+<h3 id="org4774d08">Pelkkä <code>if</code>-rakenne</h3>
+<div class="outline-text-3" id="text-org4774d08">
+<p>
+Seuraavassa esimerkissä piirretään neliö neliön muotoiseen
+piirtoikkunan keskelle. Piirtoikkunan vasempaan yläkulmaan
+piirretään toinen samankokoinen neliö, jos kuvassa on sille
+tilaa. Neliön sivun pituuden määrää vakio <code>SIVU</code>.
+</p>
+
+<div class="org-src-container">
+<pre class="src src-js" id="org26b5794">function setup() {
+  createCanvas(200, 200);
+  background("lightblue");
+  const SIVU = 60;
+
+  // keskelle piirrettävän neliön koordinaatit (x- ja y-koordinaatti sama)
+  const X = width / 2.0 - SIVU / 2.0;
+  rect (X, X, SIVU, SIVU);
+
+  if (X &gt;= SIVU)
+    rect (0, 0, SIVU, SIVU);
+} 
+</pre>
+</div>
+<p>
+<iframe 
+style="width: 200px; height: 200px; overflow: hidden;"  
+scrolling="no" frameborder="0" align="middle" 
+src="https://editor.p5js.org/reima/embed/kOFQG5nta"></iframe>
+</p>
+<p>
+Kun neliön sivun pituutta kasvatetaan, toista neliötä ei enää
+piirretä.
+</p>
+
+<div class="org-src-container">
+<pre class="src src-javascript" id="org81de8ed">function setup() {
+  createCanvas(200, 200);
+  background("lightblue");
+  const SIVU = 80;
+
+  // keskelle piirrettävän neliön koordinaatit (x- ja y-koordinaatti sama)
+  const X = width / 2.0 - SIVU / 2.0;
+  rect (X, X, SIVU, SIVU);
+
+  if (X &gt;= SIVU)
+    rect (0, 0, SIVU, SIVU);
+} 
+</pre>
+</div>
+<p>
+<iframe 
+style="width: 200px; height: 200px; overflow: hidden;"  
+scrolling="no" frameborder="0" align="middle" 
+src="https://editor.p5js.org/reima/embed/UzjDu9jAA"></iframe>
+</p>
+
+<blockquote>
+<p>
+<code>if</code>-rakenteessa on
+</p>
+<ol class="org-ol">
+<li><code>ehto</code>, joka määrää suoritetaanko seuraava lauseke</li>
+<li>lauseke, joka suoritetaan jos ehto on tosi</li>
+</ol>
+<pre class="example">
+if (ehto)
+  lauseke suoritetaan jos ehto tosi;
+</pre>
+</blockquote>
+</div>
+</div>
+<div id="outline-container-org4dc99e5" class="outline-3">
+<h3 id="org4dc99e5">Tehtäviä</h3>
+<div class="outline-text-3" id="text-org4dc99e5">
+<ol class="org-ol">
+<li>Kirjoita ohjelma, joka asettaa piirtoikkunan taustan väriksi
+vihreä värin, jos vakion <code>P</code> arvo on vähintään 100. Muussa
+tapauksessa avataan vain harmaa piirtoikkuna. Testaa ohjelmasi
+toimivuus muuttamalla vakion <code>P</code> arvoa.</li>
+<li>Kirjoita ohjelma, joka piirtää neliön muotoisen piirtoikkunan
+keskelle mahdollisimman suuren ympyrän. Jos vakion <code>P</code> arvo on
+vähintään 100, ympyrä on vihreä. Muussa tapauksessa ympyrä on
+oranssi. Testaa ohjelmasi toimivuus muuttamalla vakion <code>P</code>
+arvoa.</li>
+<li>Kirjoita ohjelma, joka asettaa piirtoikkunan taustaväriksi
+valkoisen, mikäli piirtoikkuna on neliön muotoinen. Muussa
+tapauksessa taustaväriksi asetetaan musta. Testaa ohjelmasi
+toimivuus muuttamalla piirtoikkunan kokoa.</li>
+<li>Kirjoita ohjelma, joka piirtää piirtoikkunan vasempaan
+yläkulmaan \(100\times 100\)-kokoisen neliön, jos ikkunan leveys
+on suurempi kuin korkeus. Muussa tapauksessa piirtoikkunan
+vasempaan yläkulmaan piirretään ympyrä, jonka halkaisija
+on 100. Voi olettaa, että piirtoikkunan leveys ja korkeus ovat
+vähintään 100. Testaa ohjelmasi toimivuus muuttamalla
+piirtoikkunan leveyttä ja korkeutta.</li>
+<li>Kirjoita ohjelma, joka piirtää piirtoikkunan vasempaan
+yläkulmaan neliön. Neliön sivun pituus on vakio <code>SIVU</code>. Jos
+piirretyn neliön viereen mahtuu toinen samankokoinen neliö, niin
+myös toinen neliö piirretään. Testaa ohjelmasi toimivuus
+muuttamalla piirtoikkunan leveyttä ja vakion <code>SIVU</code>
+suuruutta. Voit olettaa, että piirtoikkunan leveys ja korkeus
+ovat molemmat vähintään yhtä suuria kuin <code>SIVU</code>.</li>
+<li>Kirjoita ohjelma, joka piirtää piirtoikkunan vasempaan reunaan
+ympyrän, jonka halkaisija on piirtoikkunan korkeus. Ohjelma
+piirtää myös piirtoikkunan oikeaan reunaan samanlaisen ympyrän,
+mikäli jälkimmäinen ympyrä ei mene ensin piirretyn
+päälle. Testaa ohjelmasi toimivuus muuttamalla piirtoikkunan
+leveyttä ja korkeutta. Voit olettaa, että piirtoikkunan leveys
+on korkeutta suurempi.</li>
+</ol>
+</div>
+</div>
+</div>
+</div>
+</body>
+</html>
