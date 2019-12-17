@@ -5,7 +5,7 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>&lrm;</title>
+<title>4. Desimaaliluku ja jakolasku</title>
 <meta name="generator" content="Org mode" />
 <style type="text/css">
  <!--/*--><![CDATA[/*><!--*/
@@ -263,13 +263,15 @@ for the JavaScript code in this tag.
 </head>
 <body>
 <div id="content">
-<div id="outline-container-orgfd0042c" class="outline-2">
-<h2 id="orgfd0042c">Desimaaliluku ja jakolasku</h2>
-<div class="outline-text-2" id="text-orgfd0042c">
+<h1 class="title">4. Desimaaliluku ja jakolasku</h1>
+
+<div id="outline-container-org8699c0d" class="outline-2">
+<h2 id="org8699c0d">4. Desimaaliluku ja jakolasku</h2>
+<div class="outline-text-2" id="text-org8699c0d">
 </div>
-<div id="outline-container-org9a88232" class="outline-3">
-<h3 id="org9a88232">Desimaalierotin</h3>
-<div class="outline-text-3" id="text-org9a88232">
+<div id="outline-container-org014c90f" class="outline-3">
+<h3 id="org014c90f">Desimaalierotin</h3>
+<div class="outline-text-3" id="text-org014c90f">
 <p>
 JavaScript-ohjelmointikielessä (ja yleensäkin ohjelmointikielissä)
 desimaalierotin on piste. Seuraava esimerkki piirtää kohtaan \((100, 100)\)
@@ -277,7 +279,7 @@ suorakulmion, jonka  korkeus on leveyden ja luvun 0,3 tulo.
 (Toisin sanoen korkeus on 30&thinsp;% leveydestä.)
 </p>
 <div class="org-src-container">
-<pre class="src src-javascript" id="org2f06c31"><span style="color: #4f97d7; font-weight: bold;">function</span> <span style="color: #bc6ec5; font-weight: bold;">setup</span><span style="color: #4f97d7;">()</span> <span style="color: #4f97d7;">{</span>
+<pre class="src src-javascript" id="orga6e8866"><span style="color: #4f97d7; font-weight: bold;">function</span> <span style="color: #bc6ec5; font-weight: bold;">setup</span><span style="color: #4f97d7;">()</span> <span style="color: #4f97d7;">{</span>
   createCanvas<span style="color: #bc6ec5;">(</span><span style="color: #a45bad;">400</span>, <span style="color: #a45bad;">400</span><span style="color: #bc6ec5;">)</span>;
   background<span style="color: #bc6ec5;">(</span><span style="color: #2d9574;">"lightblue"</span><span style="color: #bc6ec5;">)</span>;
   <span style="color: #4f97d7; font-weight: bold;">const</span> <span style="color: #7590db;">LEVEYS</span> = <span style="color: #a45bad;">150</span>;
@@ -294,9 +296,9 @@ src="https://editor.p5js.org/reima/embed/8g9zCSiHu"></iframe>
 </div>
 </div>
 
-<div id="outline-container-orgff980d7" class="outline-3">
-<h3 id="orgff980d7">Jakolasku</h3>
-<div class="outline-text-3" id="text-orgff980d7">
+<div id="outline-container-orgb789093" class="outline-3">
+<h3 id="orgb789093">Jakolasku</h3>
+<div class="outline-text-3" id="text-orgb789093">
 <p>
 Jakolaskuoperaattori JavaScript-kielessä on kauttaviiva <code>/</code>. Alla
 olevassa esimerkissä piirretään neliö ja sen kanssa kulmittain
@@ -304,7 +306,7 @@ suorakaide, joka leveys on puolet ja korkeus kolmasosa neliön sivun
 pituudesta.
 </p>
 <div class="org-src-container">
-<pre class="src src-javascript" id="org9548e9e"><span style="color: #4f97d7; font-weight: bold;">function</span> <span style="color: #bc6ec5; font-weight: bold;">setup</span><span style="color: #4f97d7;">()</span> <span style="color: #4f97d7;">{</span>
+<pre class="src src-javascript" id="org7a2517d"><span style="color: #4f97d7; font-weight: bold;">function</span> <span style="color: #bc6ec5; font-weight: bold;">setup</span><span style="color: #4f97d7;">()</span> <span style="color: #4f97d7;">{</span>
   createCanvas<span style="color: #bc6ec5;">(</span><span style="color: #a45bad;">400</span>, <span style="color: #a45bad;">400</span><span style="color: #bc6ec5;">)</span>;
   background<span style="color: #bc6ec5;">(</span><span style="color: #2d9574;">"lightblue"</span><span style="color: #bc6ec5;">)</span>;
   <span style="color: #4f97d7; font-weight: bold;">const</span> <span style="color: #7590db;">SIVU</span> = <span style="color: #a45bad;">150</span>;
@@ -321,9 +323,9 @@ src="https://editor.p5js.org/reima/embed/WRewRJtO1"></iframe>
 </p>
 </div>
 </div>
-<div id="outline-container-orgae36ac8" class="outline-3">
-<h3 id="orgae36ac8">Kokonaislukujen jakolasku antaa kokonaisluvun</h3>
-<div class="outline-text-3" id="text-orgae36ac8">
+<div id="outline-container-org7b0345a" class="outline-3">
+<h3 id="org7b0345a">Kokonaislukujen jakolasku antaa kokonaisluvun</h3>
+<div class="outline-text-3" id="text-org7b0345a">
 <p>
 Jakolaskuun liittyy suorastaan vaarallinen yksityiskohta.
 </p>
@@ -416,9 +418,9 @@ sanasta integer.
 </div>
 </div>
 
-<div id="outline-container-org44ce4c9" class="outline-3">
-<h3 id="org44ce4c9">Sisäiset &ldquo;vakiot&rdquo; <code>width</code> ja <code>height</code> ja skaalautuvat kuvat</h3>
-<div class="outline-text-3" id="text-org44ce4c9">
+<div id="outline-container-orgc6f2b99" class="outline-3">
+<h3 id="orgc6f2b99">Sisäiset &ldquo;vakiot&rdquo; <code>width</code> ja <code>height</code> ja skaalautuvat kuvat</h3>
+<div class="outline-text-3" id="text-orgc6f2b99">
 <p>
 p5.js-ohjelma määrittelee automaattisesti
 &ldquo;kokonaislukuvakiot&rdquo; <code>width</code> ja <code>height</code>, joiden
@@ -440,7 +442,7 @@ leveys ja korkeus ovat samat, saadaan ympyrä.
 </p>
 
 <div class="org-src-container">
-<pre class="src src-js" id="org0fbf8e7"><span style="color: #4f97d7; font-weight: bold;">function</span> <span style="color: #bc6ec5; font-weight: bold;">setup</span><span style="color: #4f97d7;">()</span> <span style="color: #4f97d7;">{</span>
+<pre class="src src-js" id="orgcce5024"><span style="color: #4f97d7; font-weight: bold;">function</span> <span style="color: #bc6ec5; font-weight: bold;">setup</span><span style="color: #4f97d7;">()</span> <span style="color: #4f97d7;">{</span>
   createCanvas<span style="color: #bc6ec5;">(</span><span style="color: #a45bad;">400</span>, <span style="color: #a45bad;">400</span><span style="color: #bc6ec5;">)</span>;
   background<span style="color: #bc6ec5;">(</span><span style="color: #2d9574;">"lightblue"</span><span style="color: #bc6ec5;">)</span>;
   <span style="color: #2aa1ae; background-color: #292e34;">// </span><span style="color: #2aa1ae; background-color: #292e34;">ympyr&#228;n s&#228;de</span>
@@ -464,7 +466,7 @@ ikkuna olisi suurempi tai pienempi.
 </p>
 
 <div class="org-src-container">
-<pre class="src src-javascript" id="org9e3c3f6"><span style="color: #4f97d7; font-weight: bold;">function</span> <span style="color: #bc6ec5; font-weight: bold;">setup</span><span style="color: #4f97d7;">()</span> <span style="color: #4f97d7;">{</span>
+<pre class="src src-javascript" id="org7df1a57"><span style="color: #4f97d7; font-weight: bold;">function</span> <span style="color: #bc6ec5; font-weight: bold;">setup</span><span style="color: #4f97d7;">()</span> <span style="color: #4f97d7;">{</span>
   createCanvas<span style="color: #bc6ec5;">(</span><span style="color: #a45bad;">100</span>, <span style="color: #a45bad;">100</span><span style="color: #bc6ec5;">)</span>;
   background<span style="color: #bc6ec5;">(</span><span style="color: #2d9574;">"lightblue"</span><span style="color: #bc6ec5;">)</span>;
   <span style="color: #2aa1ae; background-color: #292e34;">// </span><span style="color: #2aa1ae; background-color: #292e34;">ympyr&#228;n s&#228;de</span>
@@ -481,9 +483,9 @@ src="https://editor.p5js.org/reima/embed/2di28apzL"></iframe>
 </p>
 </div>
 </div>
-<div id="outline-container-org6be2cf4" class="outline-3">
-<h3 id="org6be2cf4">Esimerkki 1</h3>
-<div class="outline-text-3" id="text-org6be2cf4">
+<div id="outline-container-org13da928" class="outline-3">
+<h3 id="org13da928">Esimerkki 1</h3>
+<div class="outline-text-3" id="text-org13da928">
 <p>
 Suomen, Ruotsin ja Tanskan lipuissa on jonkin värinen risti toisen
 värisellä pohjalla. Värien lisäksi lipuissa vaihtelevat
@@ -511,7 +513,7 @@ osan suuruus on tällöin \[ \frac{600}{5 + 2 + 9} = 37,5. \]
 </p>
 
 <div class="org-src-container">
-<pre class="src src-javascript" id="org9b0407a"><span style="color: #4f97d7; font-weight: bold;">function</span> <span style="color: #bc6ec5; font-weight: bold;">setup</span><span style="color: #4f97d7;">()</span> <span style="color: #4f97d7;">{</span>
+<pre class="src src-javascript" id="orgd89a81b"><span style="color: #4f97d7; font-weight: bold;">function</span> <span style="color: #bc6ec5; font-weight: bold;">setup</span><span style="color: #4f97d7;">()</span> <span style="color: #4f97d7;">{</span>
    createCanvas<span style="color: #bc6ec5;">(</span><span style="color: #a45bad;">600</span>, <span style="color: #a45bad;">600</span><span style="color: #bc6ec5;">)</span>;
    <span style="color: #2aa1ae; background-color: #292e34;">// </span><span style="color: #2aa1ae; background-color: #292e34;">suhteet vaakasuunnassa</span>
    <span style="color: #4f97d7; font-weight: bold;">const</span> <span style="color: #7590db;">VASEN</span> = <span style="color: #a45bad;">5</span>;
@@ -568,7 +570,7 @@ lipussa vaakasuunta jakautuu suhteissa \(12 : 4 : 21\) ja
 pystysuunta vastaavissa mitoissa suhteessa \(12 : 4: 12.\)
 </p>
 <div class="org-src-container">
-<pre class="src src-javascript" id="orgb67f85d"><span style="color: #4f97d7; font-weight: bold;">function</span> <span style="color: #bc6ec5; font-weight: bold;">setup</span><span style="color: #4f97d7;">()</span> <span style="color: #4f97d7;">{</span>
+<pre class="src src-javascript" id="orgea57797"><span style="color: #4f97d7; font-weight: bold;">function</span> <span style="color: #bc6ec5; font-weight: bold;">setup</span><span style="color: #4f97d7;">()</span> <span style="color: #4f97d7;">{</span>
  createCanvas<span style="color: #bc6ec5;">(</span><span style="color: #a45bad;">350</span>, <span style="color: #a45bad;">350</span><span style="color: #bc6ec5;">)</span>;
  <span style="color: #2aa1ae; background-color: #292e34;">// </span><span style="color: #2aa1ae; background-color: #292e34;">suhteet vaakasuunnassa</span>
  <span style="color: #4f97d7; font-weight: bold;">const</span> <span style="color: #7590db;">VASEN</span> = <span style="color: #a45bad;">12</span>;
@@ -619,9 +621,9 @@ src="https://editor.p5js.org/reima/embed/uXv2-5IZH"></iframe>
 </p>
 </div>
 </div>
-<div id="outline-container-orgd589806" class="outline-3">
-<h3 id="orgd589806">Tehtävät</h3>
-<div class="outline-text-3" id="text-orgd589806">
+<div id="outline-container-org99cde82" class="outline-3">
+<h3 id="org99cde82">Tehtävät</h3>
+<div class="outline-text-3" id="text-org99cde82">
 <ol class="org-ol">
 <li>Piirrä neliön muotoiseen piirtoikkunan vasempaan yläkulmaan
 annettu kuvio. Kuvion tulee skaalautua piirtoikkunan mukana.
@@ -635,7 +637,7 @@ skaalautuu piirtoikkunan mukana. Keltaisen värin HSB-arvot ovat
 \((17, 100, 100).\)
 </p>
 <div class="org-src-container">
-<pre class="src src-javascript" id="org8b1816c"><span style="color: #4f97d7; font-weight: bold;">function</span> <span style="color: #bc6ec5; font-weight: bold;">setup</span><span style="color: #4f97d7;">()</span> <span style="color: #4f97d7;">{</span>
+<pre class="src src-javascript" id="orgdb854c6"><span style="color: #4f97d7; font-weight: bold;">function</span> <span style="color: #bc6ec5; font-weight: bold;">setup</span><span style="color: #4f97d7;">()</span> <span style="color: #4f97d7;">{</span>
   createCanvas<span style="color: #bc6ec5;">(</span><span style="color: #a45bad;">200</span>, <span style="color: #a45bad;">200</span><span style="color: #bc6ec5;">)</span>;
   colorMode<span style="color: #bc6ec5;">(</span>HSB, <span style="color: #a45bad;">100</span><span style="color: #bc6ec5;">)</span>;
   noStroke<span style="color: #bc6ec5;">()</span>;
@@ -715,7 +717,7 @@ pystysuunnassa. Alla olevassa kuvassa <code>A:B</code> on <code>1:3</code> ja <c
 <code>3:2</code>.
 </p>
 <div class="org-src-container">
-<pre class="src src-javascript" id="org393849e"><span style="color: #4f97d7; font-weight: bold;">function</span> <span style="color: #bc6ec5; font-weight: bold;">setup</span><span style="color: #4f97d7;">()</span> <span style="color: #4f97d7;">{</span>
+<pre class="src src-javascript" id="orgb1b7006"><span style="color: #4f97d7; font-weight: bold;">function</span> <span style="color: #bc6ec5; font-weight: bold;">setup</span><span style="color: #4f97d7;">()</span> <span style="color: #4f97d7;">{</span>
   createCanvas<span style="color: #bc6ec5;">(</span><span style="color: #a45bad;">500</span>, <span style="color: #a45bad;">200</span><span style="color: #bc6ec5;">)</span>;
   background<span style="color: #bc6ec5;">(</span><span style="color: #2d9574;">"lightblue"</span><span style="color: #bc6ec5;">)</span>;
   <span style="color: #4f97d7; font-weight: bold;">const</span> <span style="color: #7590db;">A</span> = <span style="color: #a45bad;">1</span>;
