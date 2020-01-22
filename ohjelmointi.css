@@ -5,16 +5,16 @@
   --base03: #747369;
   --base04: #a09f93; /* harmaa */
   --base05: #d3d0c8;
-  --base06: #e8e6df;
+  --base06: #e8e6df; /* lämmin harmaa */
   --base07: #f2f0ec;
   --base08: #f2777a;
   --base09: #f99157;
   --base0a: #ffcc66; /* okra */
   --base0b: #99cc99; /* vaalean vihreä */
-  --base0c: #66cccc;
-  --base0d: #6699cc;
-  --base0e: #cc99cc;
-  --base0f: #d27b53;
+  --base0c: #66cccc; /* syaani */
+  --base0d: #6699cc; /* tumma syaani */
+  --base0e: #cc99cc; /* laventeli */
+  --base0f: #d27b53; /* rusehtavan punainen */
 }
 
 body
@@ -87,7 +87,7 @@ pre:not(.example)
 blockquote
 {
     margin-top: 10px;
-    background-color: var(--base0b);
+    background-color: var(--base05);
     margin: 0 auto;
     margin-top: 10px;
     width: 80%;
